@@ -2,6 +2,7 @@ package con.hongghe.basic.collections;
 
 import com.google.gson.*;
 import com.hongghe.basicjava.collections.StringDemo;
+import com.hongghe.basicjava.domain.ApiContant;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,5 +49,25 @@ public class StringTest {
         JsonObject jsonObject = jsonElement.getAsJsonObject().getAsJsonObject("map");
         Map maps = new Gson().fromJson(jsonObject, Map.class);
         logger.info(gson.toJson(maps));
+    }
+
+    @Test
+    public void testEnum() {
+        switch (ApiContant.SUCCESS) {
+            case SUCCESS:
+                logger.info("success");
+                break;
+            case ERROR:
+                logger.info("error");
+                break;
+            default:
+                break;
+        }
+
+        if (ApiContant.SUCCESS == ApiContant.SUCCESS) {
+            logger.info("SUCCESS");
+        } else {
+            logger.info("ERROR");
+        }
     }
 }

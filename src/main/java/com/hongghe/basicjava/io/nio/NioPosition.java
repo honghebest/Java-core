@@ -5,22 +5,22 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class Channel {
+public class NioPosition {
 
     public static void main(String[] args) throws IOException {
-        FileInputStream inputStream = new FileInputStream("\\test.txt");
-        // 获取通道
-        FileChannel fileChannel = inputStream.getChannel();
-        // 创建缓冲区
-        ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
-        // 读取数据到缓冲区
+        FileInputStream fileInputStream = new FileInputStream("\\test.txt");
+        FileChannel fileChannel = fileInputStream.getChannel();
+        ByteBuffer byteBuffer = ByteBuffer.allocate(10);
         fileChannel.read(byteBuffer);
+
+        byteBuffer.flip();
 
         while (byteBuffer.remaining() > 0) {
             byte b = byteBuffer.get();
             System.out.println((char)b);
         }
 
-        fileChannel.close();
+        byteBuffer.clear();
+        fileInputStream.close();
     }
 }

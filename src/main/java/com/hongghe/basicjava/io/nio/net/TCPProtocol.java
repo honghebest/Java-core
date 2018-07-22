@@ -10,10 +10,28 @@ import java.io.IOException;
  *以使不同协议都能方便地使用这个基本的服务模式。
  */
 public interface TCPProtocol{
-    //accept I/O形式
+
+    /**
+     * accept I/O形式
+     *
+     * @param key
+     * @throws IOException
+     */
     void handleAccept(SelectionKey key) throws IOException;
-    //read I/O形式
+
+    /**
+     * read I/O形式
+     *
+     * @param key
+     * @throws IOException
+     */
     void handleRead(SelectionKey key) throws IOException;
-    //write I/O形式
+
+    /**
+     * write I/O形式
+     *
+     * @param key
+     * @throws IOException
+     */
     void handleWrite(SelectionKey key) throws IOException;
 }

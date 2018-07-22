@@ -9,7 +9,9 @@ import java.nio.channels.ServerSocketChannel;
 import java.util.Iterator;
 
 /**
+ * 选择器
  *
+ * @author hongghe 21/07/2018
  */
 public class TCPServerSelector {
 
@@ -21,6 +23,7 @@ public class TCPServerSelector {
         if (args.length < 1){
             throw new IllegalArgumentException("Parameter(s): <Port> ...");
         }
+
         //创建一个选择器
         Selector selector = Selector.open();
         for (String arg : args){
@@ -33,6 +36,7 @@ public class TCPServerSelector {
             //将选择器注册到各个信道
             listnChannel.register(selector, SelectionKey.OP_ACCEPT);
         }
+
         //创建一个实现了协议接口的对象
         TCPProtocol protocol = new EchoSelectorProtocol(BUFSIZE);
         //不断轮询select方法，获取准备好的信道所关联的Key集

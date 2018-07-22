@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class Channel {
+public class NioChannel {
 
     public static void main(String[] args) throws IOException {
         FileInputStream inputStream = new FileInputStream("\\test.txt");

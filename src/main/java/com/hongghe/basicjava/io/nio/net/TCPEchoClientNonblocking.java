@@ -5,10 +5,18 @@ import java.net.SocketException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
+/**
+ * 非阻塞客户端
+ *
+ * @author hongghe 21/07/2018
+ */
 public class TCPEchoClientNonblocking {
+
     public static void main(String args[]) throws Exception{
-        if ((args.length < 2) || (args.length > 3))
+        if ((args.length < 2) || (args.length > 3)) {
             throw new IllegalArgumentException("参数不正确");
+        }
+
         //第一个参数作为要连接的服务端的主机名或IP
         String server = args[0];
         //第二个参数为要发送到服务端的字符串

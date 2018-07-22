@@ -2,7 +2,7 @@ package com.hongghe.basicjava.io.nio;
 
 import java.nio.IntBuffer;
 
-public class Buffer {
+public class NioBuffer {
 
     public static void main(String[] args) {
         // 分配新的int缓冲区，参数为缓冲区容量

@@ -3,6 +3,8 @@ package com.hongghe.basicjava.reflect.clazz;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.lang.reflect.Field;
+
 /**
  * 获取类的信息
  *
@@ -20,5 +22,10 @@ public class ClassInfo {
     public String getPackageName(String className) throws Exception {
         Class clazz = Class.forName(className);
         return clazz.getPackage().getName();
+    }
+
+    public Field[] getFiled(Class<?> className) throws Exception {
+        Class clazz = className;
+        return clazz.getDeclaredFields();
     }
 }

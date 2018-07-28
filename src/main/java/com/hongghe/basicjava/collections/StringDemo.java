@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class StringDemo {
 
-    private static final Logger logger = LoggerFactory.getLogger(StringDemo.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(StringDemo.class);
 
     public void compareString(String stringDemoA, String stringDemoB) {
         StringBuilder stringBuilder = new StringBuilder();

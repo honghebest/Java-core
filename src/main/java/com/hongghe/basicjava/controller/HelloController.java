@@ -1,6 +1,6 @@
 package com.hongghe.basicjava.controller;
 
-import com.hongghe.basicjava.annonation.UserAccess;
+import com.hongghe.basicjava.annotation.UserAccess;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;

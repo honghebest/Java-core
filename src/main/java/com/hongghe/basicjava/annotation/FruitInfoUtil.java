@@ -1,10 +1,15 @@
-package com.hongghe.basicjava.annonation;
+package com.hongghe.basicjava.annotation;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Field;
 
+/**
+ * The handler of annotation of java.
+ *
+ * @author hongghe 28/07/2018
+ */
 public class FruitInfoUtil {
 
     public static final Logger logger = LoggerFactory.getLogger(FruitInfoUtil.class);
@@ -20,7 +25,7 @@ public class FruitInfoUtil {
             if (field.isAnnotationPresent(FruitName.class)) {
                 FruitName fruitName = (FruitName) field.getAnnotation(FruitName.class);
                 fruitNameString = fruitNameString + fruitName;
-                logger.info("The annonation is fruitName={}", fruitNameString);
+                logger.info("The annotation is fruitName={}", fruitNameString);
             } else if(field.isAnnotationPresent(FruitColor.class)){
                 FruitColor fruitColor= (FruitColor) field.getAnnotation(FruitColor.class);
                 fruitColorString = fruitColorString+fruitColor.fruitColor().toString();

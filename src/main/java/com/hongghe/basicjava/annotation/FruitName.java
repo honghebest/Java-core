@@ -1,4 +1,4 @@
-package com.hongghe.basicjava.annonation;
+package com.hongghe.basicjava.annotation;
 
 import java.lang.annotation.*;
 

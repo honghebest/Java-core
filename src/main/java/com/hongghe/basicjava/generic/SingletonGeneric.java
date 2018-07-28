@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
  *
  * @author hongghe 07/2018
  */
-public class SigleGeneric <T> {
+public class SingletonGeneric<T> {
 
-    private static final Logger logger = LoggerFactory.getLogger(SigleGeneric.class);
+    private static final Logger logger = LoggerFactory.getLogger(SingletonGeneric.class);
 
     public String getGeneric(T object) {
         if (object.equals(null)) {

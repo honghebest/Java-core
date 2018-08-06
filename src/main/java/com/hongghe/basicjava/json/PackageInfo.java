@@ -5,5 +5,3 @@ package com.hongghe.basicjava.json;
  *
  * @author hongghe 31/07/2017
  */
-public class PackageInfo {
-}

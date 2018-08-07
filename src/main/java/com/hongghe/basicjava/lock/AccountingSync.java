@@ -5,7 +5,7 @@ public class AccountingSync implements Runnable {
     static int i = 0;
 
     /**
-     * synchronized 修饰实例方法
+     * synchronized 修饰实例方法的实现
      */
     public synchronized void increase() {
         i++;

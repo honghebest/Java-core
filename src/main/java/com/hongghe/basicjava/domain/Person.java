@@ -2,6 +2,11 @@ package com.hongghe.basicjava.domain;
 
 import lombok.Data;
 
+/**
+ * 个人信息
+ *
+ * @author hongghe 09/08/2018
+ */
 @Data
 public class Person
 {

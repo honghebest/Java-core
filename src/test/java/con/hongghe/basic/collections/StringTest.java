@@ -2,7 +2,7 @@ package con.hongghe.basic.collections;
 
 import com.google.gson.*;
 import com.hongghe.basicjava.collections.StringDemo;
-import com.hongghe.basicjava.domain.ApiContant;
+import com.hongghe.basicjava.domain.ApiResult;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -53,7 +53,7 @@ public class StringTest {
 
     @Test
     public void testEnum() {
-        switch (ApiContant.SUCCESS) {
+        switch (ApiResult.SUCCESS) {
             case SUCCESS:
                 logger.info("success");
                 break;
@@ -64,7 +64,7 @@ public class StringTest {
                 break;
         }
 
-        if (ApiContant.SUCCESS == ApiContant.SUCCESS) {
+        if (ApiResult.SUCCESS == ApiResult.SUCCESS) {
             logger.info("SUCCESS");
         } else {
             logger.info("ERROR");

@@ -1,6 +1,9 @@
 package com.hongghe.basicjava.lock;
 
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
 
 /**
  * Task using
@@ -40,19 +43,5 @@ thread.start();*/
         }
 
         System.out.println("所有任务执行完毕");
-    }
-}
-
-
-class SubTask implements Callable<Integer> {
-    @Override
-    public Integer call() throws Exception {
-        System.out.println("子线程在进行计算");
-        Thread.sleep(3000);
-        int sum = 0;
-        for(int i=0;i<100;i++) {
-            sum += i;
-        }
-        return sum;
     }
 }

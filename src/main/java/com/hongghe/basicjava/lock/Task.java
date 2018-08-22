@@ -5,6 +5,9 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.Callable;
 
+/**
+ * @author hongghe 2018/08/19
+ */
 public class Task implements Callable<Integer> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Task.class);

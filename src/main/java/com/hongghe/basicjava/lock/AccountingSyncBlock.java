@@ -1,5 +1,8 @@
 package com.hongghe.basicjava.lock;
 
+/**
+ * @author hongghe 2018/08/19
+ */
 public class AccountingSyncBlock implements Runnable{
     static AccountingSync instance=new AccountingSync();
     static int i=0;

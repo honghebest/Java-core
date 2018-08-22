@@ -1,5 +1,8 @@
 package com.hongghe.basicjava.lock;
 
+/**
+ * @author hongghe 2018/08/19
+ */
 public class AccountingSyncBad implements Runnable{
     static int i=0;
     public synchronized void increase(){
@@ -7,7 +10,7 @@ public class AccountingSyncBad implements Runnable{
     }
     @Override
     public void run() {
-        for(int j=0;j<1000000;j++){
+        for(int j=0; j<3; j++){
             increase();
         }
     }

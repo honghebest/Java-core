@@ -1,5 +1,8 @@
 package com.hongghe.basicjava.lock;
 
+/**
+ * @author hongghe 2018/08/19
+ */
 public class AccountingSync implements Runnable {
     /** 共享资源(临界资源)*/
     static int i = 0;

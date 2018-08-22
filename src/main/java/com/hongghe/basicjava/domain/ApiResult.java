@@ -6,6 +6,7 @@ package com.hongghe.basicjava.domain;
  * @author hongghe 09/08/2018
  */
 public enum ApiResult {
+
     SUCCESS(1, "SUCCESS"),
     UNKNOWN(0, "UNKNOWN"),
     ERROR(-1, "ERROR");

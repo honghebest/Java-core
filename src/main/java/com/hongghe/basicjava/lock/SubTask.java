@@ -3,6 +3,9 @@ package com.hongghe.basicjava.lock;
 
 import java.util.concurrent.Callable;
 
+/**
+ * @author hongghe 2018/08/19
+ */
 public class SubTask implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {

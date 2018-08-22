@@ -1,5 +1,8 @@
 package com.hongghe.basicjava.lock;
 
+/**
+ * @author hongghe 2018/08/19
+ */
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

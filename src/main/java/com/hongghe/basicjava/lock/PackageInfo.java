@@ -5,5 +5,3 @@ package com.hongghe.basicjava.lock;
  *
  * @author hongghe 28/07/2018
  */
-public class PackageInfo {
-}

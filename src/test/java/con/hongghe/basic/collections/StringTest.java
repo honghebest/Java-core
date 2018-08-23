@@ -1,8 +1,8 @@
 package con.hongghe.basic.collections;
 
 import com.google.gson.*;
-import com.hongghe.basicjava.collections.StringDemo;
 import com.hongghe.basicjava.domain.ApiResult;
+import com.hongghe.basicjava.string.StringDemo;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

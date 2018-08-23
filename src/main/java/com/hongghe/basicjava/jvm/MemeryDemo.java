@@ -20,13 +20,13 @@ public class MemeryDemo {
         personSet.add(person1);
         personSet.add(person2);
 
-        System.out.println("The size of = {}" + personSet.size());
+        LOGGER.info("The size of = {}", personSet.size());
 
         person.setAge(413121);
 
         personSet.remove(person);
         personSet.add(person);
-        System.out.println("The size of = {}" + personSet.size());
+        LOGGER.info("The size of = {}" , personSet.size());
         for (Person person3 : personSet) {
             System.out.println(person3.getName());
         }

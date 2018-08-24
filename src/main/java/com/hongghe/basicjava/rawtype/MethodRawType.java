@@ -1,6 +1,7 @@
 package com.hongghe.basicjava.rawtype;
 
 import com.google.gson.Gson;
+import com.hongghe.basicjava.domain.Person;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,12 +18,17 @@ public class MethodRawType<T> {
     }
 
     public <E> String getMethodValue(E e) {
+        Gson gson = new Gson();
+        LOGGER.info("The object is = {}", gson.toJson(e));
         LOGGER.info("The raw type: " + e.toString());
         return e.toString();
     }
 
     public static void main(String[] args) {
         MethodRawType methodRawType = new MethodRawType();
-        methodRawType.getMethodValue(Gson.class);
+        Person person = new Person();
+        person.setAge(12);
+        person.setName("Henry");
+        methodRawType.getMethodValue("asd");
     }
 }

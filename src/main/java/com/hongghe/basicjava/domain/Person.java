@@ -1,6 +1,8 @@
 package com.hongghe.basicjava.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 个人信息
@@ -8,15 +10,12 @@ import lombok.Data;
  * @author hongghe 09/08/2018
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Person
 {
     private String name;
     private Integer age;
-
-    public Person(String name, Integer age) {
-        this.name = name;
-        this.age = age;
-    }
 
     @Override
     public String toString()

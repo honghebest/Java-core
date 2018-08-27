@@ -2,6 +2,11 @@ package com.hongghe.basicjava.io.nio;
 
 import java.nio.IntBuffer;
 
+/**
+ * NIO buffer.
+ *
+ * @author hongghe 2018/08/27
+ */
 public class NioBuffer {
 
     public static void main(String[] args) {

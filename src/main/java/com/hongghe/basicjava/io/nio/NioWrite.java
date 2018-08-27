@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
+/**
+ * NIO write.
+ *
+ * @author hongghe 2018/08/27
+ */
 public class NioWrite {
 
     private static final byte message[] = { 83, 111, 109, 101, 32,

@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
+/**
+ * NIO position.
+ *
+ * @author hongghe 2018/08/27
+ */
 public class NioPosition {
 
     public static void main(String[] args) throws IOException {

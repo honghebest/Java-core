@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
+/**
+ * NIO channel.
+ *
+ * @author hongghe 2018/08/27
+ */
 public class NioChannel {
 
     public static void main(String[] args) throws IOException {

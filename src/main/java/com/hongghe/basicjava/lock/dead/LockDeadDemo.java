@@ -9,7 +9,9 @@ import java.util.concurrent.locks.ReentrantLock;
 public class LockDeadDemo {
 
     public static class DeadLockBean{
+
         private Lock lock = new ReentrantLock();
+
         public void productDeadLock() throws Throwable {
             System.out.println(Thread.currentThread().getName() + "   进入了方法！");
             lock.lock();
@@ -63,8 +65,10 @@ public class LockDeadDemo {
                 }
             }
         },"threadB");
+
         threadA.start();
         threadB.start();
+
         try {
             System.out.println("main线程即将被join");
             threadA.join();

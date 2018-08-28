@@ -18,15 +18,15 @@ public class SyncDeadLock {
             public void run() {
                 synchronized (locka){
                     try{
-                        System.out.println(Thread.currentThread().getName()+" get locka ing!");
+                        System.out.println(Thread.currentThread().getName()+" get lock A is running!");
                         Thread.sleep(500);
                         System.out.println(Thread.currentThread().getName()+" after sleep 500ms!");
                     }catch(Exception e){
                         e.printStackTrace();
                     }
-                    System.out.println(Thread.currentThread().getName()+" need lockb!Just waiting!");
+                    System.out.println(Thread.currentThread().getName()+" need lock B!Just waiting!");
                     synchronized (lockb){
-                        System.out.println(Thread.currentThread().getName()+" get lockb ing!");
+                        System.out.println(Thread.currentThread().getName()+" get lock B running!");
                     }
                 }
             }
@@ -37,15 +37,15 @@ public class SyncDeadLock {
             public void run() {
                 synchronized (lockb){
                     try{
-                        System.out.println(Thread.currentThread().getName()+" get lockb ing!");
+                        System.out.println(Thread.currentThread().getName()+" get lock B running!");
                         Thread.sleep(500);
                         System.out.println(Thread.currentThread().getName()+" after sleep 500ms!");
                     }catch(Exception e){
                         e.printStackTrace();
                     }
-                    System.out.println(Thread.currentThread().getName()+" need locka! Just waiting!");
+                    System.out.println(Thread.currentThread().getName()+" need lock A! Just waiting!");
                     synchronized (locka){
-                        System.out.println(Thread.currentThread().getName()+" get locka ing!");
+                        System.out.println(Thread.currentThread().getName()+" get lock A is running!");
                     }
                 }
             }

@@ -2,6 +2,7 @@ package com.hongghe.basicjava.concurrency;
 
 import com.google.common.collect.ImmutableMap;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicReference;
@@ -13,12 +14,12 @@ import java.util.concurrent.atomic.AtomicReference;
  */
 public class ConcurrentHashMapDemp {
 
-    private final AtomicReference<ImmutableMap<String, String>> atomicReferenceRef =
+    public final AtomicReference<ImmutableMap<String, String>> atomicReferenceRef =
             new AtomicReference<>(ImmutableMap.of());
-
-
-
+    
     public static void main(String[] args) {
+        Map<String, String> hashMap = new HashMap<>();
         Map<String, String> map = new ConcurrentHashMap<>();
+
     }
 }

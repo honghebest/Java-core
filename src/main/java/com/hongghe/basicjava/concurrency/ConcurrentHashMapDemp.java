@@ -16,7 +16,7 @@ public class ConcurrentHashMapDemp {
 
     public final AtomicReference<ImmutableMap<String, String>> atomicReferenceRef =
             new AtomicReference<>(ImmutableMap.of());
-    
+
     public static void main(String[] args) {
         Map<String, String> hashMap = new HashMap<>();
         Map<String, String> map = new ConcurrentHashMap<>();

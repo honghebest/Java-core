@@ -8,7 +8,7 @@ package com.hongghe.basicjava.classloader;
  *
  * @author hongghe 02/08/2018
  */
-public class LoanderSortDemo {
+public class LoaderSortDemo {
 
     static {
         System.out.println("父类的静态代码块");
@@ -18,7 +18,11 @@ public class LoanderSortDemo {
         System.out.println("父类的普通代码块");
     }
 
-    public LoanderSortDemo(){
+    public LoaderSortDemo(){
         System.out.println("父类的构造器");
+    }
+
+    public static void main(String[] args) {
+        LoaderDemo loaderDemo = new LoaderDemo();
     }
 }

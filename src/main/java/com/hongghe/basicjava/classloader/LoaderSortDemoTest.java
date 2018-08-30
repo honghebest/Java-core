@@ -5,7 +5,7 @@ package com.hongghe.basicjava.classloader;
  *
  * @author hongghe 02/08/2018
  */
-public class LoaderSortDemoTest extends LoanderSortDemo {
+public class LoaderSortDemoTest extends LoaderSortDemo {
 
     static {
         System.out.println("子类的静态代码块");

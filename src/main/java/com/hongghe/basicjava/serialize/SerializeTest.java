@@ -13,7 +13,6 @@ public class SerializeTest  {
     public static void main(String[] args) {
         LOGGER.info("序列化的实现。");
         ApiDemo apiDemo = new ApiDemo();
-
         System.out.println(apiDemo.getMsg());
     }
 }

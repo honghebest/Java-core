@@ -20,6 +20,5 @@ public class ConcurrentHashMapDemp {
     public static void main(String[] args) {
         Map<String, String> hashMap = new HashMap<>();
         Map<String, String> map = new ConcurrentHashMap<>();
-
     }
 }

@@ -34,6 +34,7 @@ public class CloneDemo {
         System.out.println(gson.toJson(cloneBMWCar));
         carDeep.setName("deepCarDemo");
         cloneBMWCar.setCar(carDeep);
+        System.out.println(bmwCar.getCar() == cloneBMWCar.getCar());
         System.out.println(gson.toJson(cloneBMWCar));
         System.out.println(gson.toJson(bmwCar));
     }

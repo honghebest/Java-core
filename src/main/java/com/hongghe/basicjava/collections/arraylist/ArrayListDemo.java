@@ -17,12 +17,12 @@ public class ArrayListDemo {
 
     public static void main(String[] args) {
         List<Object> list = new ArrayList<>();
-        list.add("sad");
-        list.add("asdasd");
+        list.add("Henry");
+        list.add("name");
         Gson gson = new Gson();
         Person person = new Person();
         person.setAge(12321);
-        person.setName("sdasd");
+        person.setName("hongghe");
         list.add(person);
         LOGGER.info("The arrayList is = {}", gson.toJson(list));
     }

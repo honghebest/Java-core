@@ -10,7 +10,9 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * The cache 的使用
- * Guava Cache与ConcurrentMap很相似，但也不完全一样。最基本的区别是ConcurrentMap会一直保存所有添加的元素，直到显式地移除。相对地，Guava Cache为了限制内存占用，通常都设定为自动回收元素。在某些场景下，尽管LoadingCache 不回收元素，它也是很有用的，因为它会自动加载缓存。
+ * Guava Cache与ConcurrentMap很相似，但也不完全一样。最基本的区别是ConcurrentMap会一直保存所有添加的元素，
+ * 直到显式地移除。相对地，Guava Cache为了限制内存占用，通常都设定为自动回收元素。在某些场景下，尽管LoadingCache
+ * 不回收元素，它也是很有用的，因为它会自动加载缓存。
  * Guava Cache是一个全内存的本地缓存实现，它提供了线程安全的实现机制。
  * 通常来说，Guava Cache适用于：
  * 你愿意消耗一些内存空间来提升速度。

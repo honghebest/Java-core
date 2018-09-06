@@ -15,6 +15,6 @@ public class FloatsTest {
         Float o2 = 1.1f;
         LOGGER.info("比较两个Double类型的变量");
         System.out.println("o1 == o2 " + (o1 == o2));
-        System.out.println("o1 == o2 " + (o1.equals(o2)));
+        System.out.println("o1 equal o2 " + (o1.equals(o2)));
     }
 }

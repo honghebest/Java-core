@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class CacheDemo {
 
-    public static void LoadingCacheDemo() {
+    public static void loadingCacheDemo() {
         LoadingCache<String,String> cache= CacheBuilder.newBuilder()
                 //最大缓存数目
                 .maximumSize(100)
@@ -67,4 +67,8 @@ public class CacheDemo {
         }
     }
 
+    public static void main(String[] args) {
+        loadingCacheDemo();
+        callbackDemo();
+    }
 }

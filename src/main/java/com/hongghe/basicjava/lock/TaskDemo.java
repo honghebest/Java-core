@@ -23,7 +23,7 @@ public class TaskDemo {
 //第二种方式，注意这种方式和第一种方式效果是类似的，只不过一个使用的是ExecutorService，一个使用的是Thread
 /*Task task = new Task();
 FutureTask<Integer> futureTask = new FutureTask<Integer>(task);
-Thread thread = new Thread(futureTask);
+ThreadDemo thread = new ThreadDemo(futureTask);
 thread.start();*/
 
         try {

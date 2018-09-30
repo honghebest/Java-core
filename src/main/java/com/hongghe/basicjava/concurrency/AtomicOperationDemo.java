@@ -1,13 +1,17 @@
 package com.hongghe.basicjava.concurrency;
 
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.*;
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 原子操作
  *
  * @author hongghe 04/08/2018
  */
+@Slf4j
 public class AtomicOperationDemo {
 
 static AtomicInteger count=new AtomicInteger(0);
@@ -35,11 +39,6 @@ public static class AddThread implements Runnable{
             e.printStackTrace();
         }
 
-		 /* output
-		  * AtomicIntShow() enter
-		  * result of acumulated sum=100000
-		  * AtomicIntShow() exit
-		  */
         System.out.println("result of acumulated sum="+count);
         threadpool.shutdown();
         System.out.println("AtomicIntShow() exit");

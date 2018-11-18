@@ -9,12 +9,13 @@ import java.io.IOException;
 
 public class EchoSelectorProtocol implements TCPProtocol {
 
-    private int bufSize; // 缓冲区的长度
+    /**缓冲区的长度*/
+    private int bufSize;
     public EchoSelectorProtocol(int bufSize){
         this.bufSize = bufSize;
     }
 
-    //服务端信道已经准备好了接收新的客户端连接
+    /**服务端信道已经准备好了接收新的客户端连接*/
     @Override
     public void handleAccept(SelectionKey key) throws IOException {
         SocketChannel clntChan = ((ServerSocketChannel) key.channel()).accept();
@@ -23,7 +24,7 @@ public class EchoSelectorProtocol implements TCPProtocol {
         clntChan.register(key.selector(), SelectionKey.OP_READ, ByteBuffer.allocate(bufSize));
     }
 
-    //客户端信道已经准备好了从信道中读取数据到缓冲区
+    /**客户端信道已经准备好了从信道中读取数据到缓冲区*/
     @Override
     public void handleRead(SelectionKey key) throws IOException{
         SocketChannel clntChan = (SocketChannel) key.channel();
@@ -39,7 +40,7 @@ public class EchoSelectorProtocol implements TCPProtocol {
         }
     }
 
-    //客户端信道已经准备好了将数据从缓冲区写入信道
+    /**客户端信道已经准备好了将数据从缓冲区写入信道*/
     @Override
     public void handleWrite(SelectionKey key) throws IOException {
         //获取与该信道关联的缓冲区，里面有之前读取到的数据

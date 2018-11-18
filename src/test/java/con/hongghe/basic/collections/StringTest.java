@@ -3,6 +3,7 @@ package con.hongghe.basic.collections;
 import com.google.gson.*;
 import com.hongghe.basicjava.domain.ApiResult;
 import com.hongghe.basicjava.string.StringDemo;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,9 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 public class StringTest {
-
-    private static final Logger logger = LoggerFactory.getLogger(StringTest.class);
 
     @Autowired
     private StringDemo stringDemo;
@@ -24,10 +24,10 @@ public class StringTest {
         String name = "hongghe";
         String sex = "man";
         if ((name + sex) .equals("honggheman")) {
-            logger.info("true");
+            log.info("true");
         }
 
-        logger.info("false");
+        log.info("false");
     }
 
     @Test
@@ -42,32 +42,32 @@ public class StringTest {
         map.put(1, 12);
         map.put("map", map1);
         String parameter = gson.toJson(map);
-        logger.info(gson.toJson(map));
+        log.info(gson.toJson(map));
         JsonParser jsonParser = new JsonParser();
         JsonElement jsonElement = jsonParser.parse(parameter);
         String name = jsonElement.getAsJsonObject().getAsJsonPrimitive("name").getAsString();
         JsonObject jsonObject = jsonElement.getAsJsonObject().getAsJsonObject("map");
         Map maps = new Gson().fromJson(jsonObject, Map.class);
-        logger.info(gson.toJson(maps));
+        log.info(gson.toJson(maps));
     }
 
     @Test
     public void testEnum() {
         switch (ApiResult.SUCCESS) {
             case SUCCESS:
-                logger.info("success");
+                log.info("success");
                 break;
             case ERROR:
-                logger.info("error");
+                log.info("error");
                 break;
             default:
                 break;
         }
 
         if (ApiResult.SUCCESS == ApiResult.SUCCESS) {
-            logger.info("SUCCESS");
+            log.info("SUCCESS");
         } else {
-            logger.info("ERROR");
+            log.info("ERROR");
         }
     }
 }

@@ -2,8 +2,7 @@ package com.hongghe.basicjava.thread;
 
 import com.google.gson.Gson;
 import com.hongghe.basicjava.domain.User;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,9 +11,8 @@ import org.springframework.stereotype.Service;
  * @author hongghe 07/2018
  */
 @Service
+@Slf4j
 public class SingleThread {
-
-    private static final Logger logger = LoggerFactory.getLogger(SingleThread.class);
 
     public void singleThread() {
         User user = User.builder()
@@ -24,6 +22,11 @@ public class SingleThread {
                 .name("")
                 .build();
         Gson gson = new Gson();
-        logger.info("The user={}", gson.toJson(user));
+        log.info("The user={}", gson.toJson(user));
+    }
+
+    public static void main(String[] args) {
+        SingleThread singleThread = new SingleThread();
+        singleThread.singleThread();
     }
 }

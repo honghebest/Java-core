@@ -12,7 +12,7 @@ public class DoubleParentDemo {
 
 
     /**ExtClassLoader类中获取路径的代码*/
-    private static File[] getExtDirs() {
+    private static File[] getExtDirection() {
         //加载<JAVA_HOME>/lib/ext目录中的类库
         String s = System.getProperty("java.ext.dirs");
         File[] dirs;

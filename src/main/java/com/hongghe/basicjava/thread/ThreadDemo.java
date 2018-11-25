@@ -16,7 +16,7 @@ public class ThreadDemo extends Thread {
     public void run() {
         System.out.println("Running " +  threadName );
         try {
-            for(int i = 4; i > 0; i--) {
+            for(int i = 9; i > 0; i--) {
                 System.out.println("Thread: " + threadName + ", " + i);
                 // 让线程睡眠一会
                 Thread.sleep(50);

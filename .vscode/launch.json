@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NioWrite",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.hongghe.basicjava.io.nio.NioWrite",
+            "args": "",
+            "projectName": "BasicJava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - IntegerPackage",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.hongghe.basicjava.integers.IntegerPackage",
+            "args": "",
+            "projectName": "BasicJava"
+        }
+    ]
+}

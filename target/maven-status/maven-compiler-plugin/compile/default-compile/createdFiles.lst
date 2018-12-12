@@ -21,6 +21,7 @@ com/hongghe/basicjava/process/asynchrony/PackageInfo.class
 com/hongghe/basicjava/json/domain/Student.class
 com/hongghe/basicjava/collections/PackageInfo.class
 com/hongghe/basicjava/oop/domain/BMWCar.class
+com/hongghe/basicjava/inherits/VisitorMember.class
 com/hongghe/basicjava/lock/Task.class
 com/hongghe/basicjava/pool/ExecutorPoolDemo.class
 com/hongghe/basicjava/security/SHA1Algorithm.class
@@ -32,6 +33,7 @@ com/hongghe/basicjava/gc/Generation.class
 com/hongghe/basicjava/domain/Result.class
 com/hongghe/basicjava/process/synchrony/PackageInfo.class
 com/hongghe/basicjava/serialize/ApiDemo.class
+com/hongghe/basicjava/inherits/DefaultUser.class
 com/hongghe/basicjava/guava/OptionalDemo.class
 com/hongghe/basicjava/guava/CollectionsDemo$2.class
 com/hongghe/basicjava/jvm/outofmemery/countDemo.class
@@ -139,6 +141,7 @@ com/hongghe/basicjava/guava/JoinerDemo.class
 com/hongghe/basicjava/process/cases/Producer.class
 com/hongghe/basicjava/guava/ListenableFutureDemo$1.class
 com/hongghe/basicjava/reflect/GetClassObject.class
+com/hongghe/basicjava/interfaces/UserMember.class
 com/hongghe/basicjava/collections/strings/StringTest.class
 com/hongghe/basicjava/stream/NonParam$1.class
 com/hongghe/basicjava/jvm/method/StaticAnalyseDemo$ChildTwo.class
@@ -168,6 +171,7 @@ com/hongghe/basicjava/annotation/FruitColor$Color.class
 com/hongghe/basicjava/io/io/WriteFile.class
 com/hongghe/basicjava/domain/BirdEntity$Builder.class
 com/hongghe/basicjava/concurrency/ConcurrentHashMapDemp.class
+com/hongghe/basicjava/interfaces/UserMemberService.class
 com/hongghe/basicjava/process/mutilprocess/CASDemo.class
 com/hongghe/basicjava/process/TwoThreadWaitNotify$JiNum.class
 com/hongghe/basicjava/classloader/TestMyClassLoader.class
@@ -202,6 +206,7 @@ com/hongghe/basicjava/io/nio/net/TCPProtocol.class
 com/hongghe/basicjava/generic/domain/Student.class
 com/hongghe/basicjava/classloader/DoubleParentDemo.class
 com/hongghe/basicjava/guava/EvenBusDemo.class
+com/hongghe/basicjava/polymorphisms/UserInformation.class
 com/hongghe/basicjava/annotation/FruitColor.class
 com/hongghe/basicjava/io/io/WriteByte.class
 com/hongghe/basicjava/string/StringInternDemo.class

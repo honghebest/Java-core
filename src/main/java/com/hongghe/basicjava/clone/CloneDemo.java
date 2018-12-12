@@ -1,15 +1,14 @@
 package com.hongghe.basicjava.clone;
 
 import com.google.gson.Gson;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.google.gson.JsonElement;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author hongghe 2018/9/3
  */
+@Slf4j
 public class CloneDemo {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(CloneDemo.class);
 
     public static void main(String[] args) {
         Car car = new Car();
@@ -37,5 +36,10 @@ public class CloneDemo {
         System.out.println(bmwCar.getCar() == cloneBMWCar.getCar());
         System.out.println(gson.toJson(cloneBMWCar));
         System.out.println(gson.toJson(bmwCar));
+
+        String elementJson = "{\"accountId\":\"3939823\",\"userActionSetId\":\"1106562902\",\"clientId\":\"1106562278\",\"clientSecret\":\"p4r99Su6B4Zx2iIJ\",\"redirectUri\":\"https://aso.xiaoying.com/oauth/index\"}";
+        JsonElement jsonElement = gson.toJsonTree(elementJson);
+        log.info("jsonElement = = {}", jsonElement);
+        log.info("jsonElement = = {}", gson.toJson(jsonElement));
     }
 }

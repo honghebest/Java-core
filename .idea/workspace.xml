@@ -396,7 +396,7 @@
       <workItem from="1544235864558" duration="518000" />
       <workItem from="1544514336380" duration="3000" />
       <workItem from="1544587880229" duration="127000" />
-      <workItem from="1544600328556" duration="3768000" />
+      <workItem from="1544600328556" duration="3869000" />
     </task>
     <task id="LOCAL-00001" summary="Add the single thread process.">
       <created>1542524070148</created>
@@ -441,7 +441,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9010000" />
+    <option name="totallyTimeSpent" value="9111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />

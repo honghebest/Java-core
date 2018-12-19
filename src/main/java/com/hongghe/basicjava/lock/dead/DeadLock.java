@@ -23,4 +23,9 @@ public class DeadLock {
             }
         }
     }
+
+
+    public static void deadLockDemo() {
+        Lock lock = new ReentrantLock();
+    }
 }

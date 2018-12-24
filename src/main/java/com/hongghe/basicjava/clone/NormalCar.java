@@ -6,19 +6,19 @@ import lombok.Data;
  * @author hongghe 2018/9/3
  */
 @Data
-public class Car implements Cloneable {
+public class NormalCar implements Cloneable {
     public String name;
     public Double length;
     public Double height;
 
     @Override
     public Object clone() {
-        Car car = null;
+        NormalCar normalCar = null;
         try {
-            car = (Car) super.clone();
+            normalCar = (NormalCar) super.clone();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return car;
+        return normalCar;
     }
 }

@@ -8,32 +8,32 @@ import lombok.extern.slf4j.Slf4j;
  * @author hongghe 2018/9/3
  */
 @Slf4j
-public class CloneDemo {
+public class CloneEventDemo {
 
     public static void main(String[] args) {
-        Car car = new Car();
-        car.setHeight(123.213);
-        car.setName("car");
-        car.setLength(1232.21);
-        Car cloneCar = (Car) car.clone();
-        cloneCar.setName("cloneName");
+        NormalCar normalCar = new NormalCar();
+        normalCar.setHeight(123.213);
+        normalCar.setName("normalCar");
+        normalCar.setLength(1232.21);
+        NormalCar cloneNormalCar = (NormalCar) normalCar.clone();
+        cloneNormalCar.setName("cloneName");
 
-        System.out.println(car == cloneCar);
+        System.out.println(normalCar == cloneNormalCar);
         Gson gson = new Gson();
-        System.out.println(gson.toJson(car));
-        System.out.println(gson.toJson(cloneCar));
+        System.out.println(gson.toJson(normalCar));
+        System.out.println(gson.toJson(cloneNormalCar));
 
-        Car carDeep = new Car();
-        carDeep.setName("DeepCar");
+        NormalCar normalCarDeep = new NormalCar();
+        normalCarDeep.setName("DeepCar");
         BMWCar bmwCar = new BMWCar();
         bmwCar.setNo(123123);
-        bmwCar.setCar(carDeep);
+        bmwCar.setNormalCar(normalCarDeep);
         BMWCar cloneBMWCar = (BMWCar) bmwCar.clone();
         System.out.println(gson.toJson(bmwCar));
         System.out.println(gson.toJson(cloneBMWCar));
-        carDeep.setName("deepCarDemo");
-        cloneBMWCar.setCar(carDeep);
-        System.out.println(bmwCar.getCar() == cloneBMWCar.getCar());
+        normalCarDeep.setName("deepCarDemo");
+        cloneBMWCar.setNormalCar(normalCarDeep);
+        System.out.println(bmwCar.getNormalCar() == cloneBMWCar.getNormalCar());
         System.out.println(gson.toJson(cloneBMWCar));
         System.out.println(gson.toJson(bmwCar));
 

@@ -10,7 +10,7 @@ public class BMWCar implements Cloneable {
 
     private Integer no;
 
-    private Car car;
+    private NormalCar normalCar;
 
     @Override
     public Object clone() {
@@ -22,7 +22,7 @@ public class BMWCar implements Cloneable {
             e.printStackTrace();
         }
         //深复制
-        bmwCar.car = (Car) car.clone();
+        bmwCar.normalCar = (NormalCar) normalCar.clone();
         return bmwCar;
     }
 }

@@ -1,13 +1,11 @@
-package com.hongghe.basicjava.domain;
+package com.hongghe.basicjava.compare.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 个人信息
- *
- * @author hongghe 09/08/2018
+ * @author hongghe 2018/12/27
  */
 @Data
 @AllArgsConstructor

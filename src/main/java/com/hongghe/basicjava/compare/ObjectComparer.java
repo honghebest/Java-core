@@ -46,6 +46,6 @@ public class ObjectComparer implements Comparable<Person> {
      */
     @Override
     public int compareTo(Person o) {
-        return compareTo(o.getAge().compareTo());
+        return this.compareTo(o);
     }
 }

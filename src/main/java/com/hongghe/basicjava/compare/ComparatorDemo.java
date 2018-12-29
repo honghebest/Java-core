@@ -26,11 +26,12 @@ public class ComparatorDemo {
         log.info("The people = {}", gson.toJson(personList));
 
         TreeSet tree = new TreeSet();
-        tree.add(new Person("a", 1));
-        tree.add(new Person("qa", 21));
-        tree.add(new Person("aw", 12233));
-        tree.add(new Person("bb", 123));
+        tree.add(new Person("ab", 1));
+        tree.add(new Person("aa", 21));
+        tree.add(new Person("ac", 12233));
+        tree.add(new Person("d", 123));
         log.info("The people = {}", gson.toJson(tree));
 
+        System.out.println(Math.min(12, 3));
     }
 }

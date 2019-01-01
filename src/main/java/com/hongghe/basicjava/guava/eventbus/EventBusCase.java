@@ -11,21 +11,20 @@ import org.slf4j.LoggerFactory;
  *
  * @author hongghe 06/08/2018
  */
-public class EventBusDemo {
+public class EventBusCase {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(EventBusDemo.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EventBusCase.class);
 
     public void registerEvent() {
         EventBus eventBus = new EventBus("hello_world");
+
         /**
          *如果多个subscriber订阅了同一个事件,那么每个subscriber都将收到事件通知
          *并且收到事件通知的顺序跟注册的顺序保持一致
         */
-
-        //注册订阅者
-        eventBus.register(new EventListener());
+        eventBus.register(new SingleEventListener());
         eventBus.register(new MultiEventListener());
-        eventBus.post(new OrderEvent("hello"));
+        eventBus.post(new OrderEvent("hello message"));
         eventBus.post(new OrderEvent("hello, hello"));
         eventBus.post("!!!");
     }
@@ -45,5 +44,10 @@ public class EventBusDemo {
         public boolean isDelivered() {
             return isDelivered;
         }
+    }
+
+    public static void main(String[] args) {
+        EventBusCase eventBusCase = new EventBusCase();
+        eventBusCase.registerEvent();
     }
 }

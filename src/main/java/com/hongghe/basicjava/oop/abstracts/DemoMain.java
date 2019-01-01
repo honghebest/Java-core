@@ -11,6 +11,6 @@ import java.util.Date;
 public class DemoMain {
 
     public static void main(String[] args) {
-        System.out.println(new Gson().toJson(new WindowsOS("1")));
+
     }
 }

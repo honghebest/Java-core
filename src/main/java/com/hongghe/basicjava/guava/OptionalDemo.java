@@ -1,7 +1,6 @@
 package com.hongghe.basicjava.guava;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Optional;
 
@@ -10,9 +9,24 @@ import java.util.Optional;
  *
  * @author hongghe 05/08/2018
  */
+@Slf4j
 public class OptionalDemo {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(OptionalDemo.class);
+    private static Integer sum(Optional<Integer> integerA, Optional<Integer> integerB) {
+        //isPresent():如果Optional包含非null的引用（引用存在），返回true
+        log.info("First param is present: " + integerA.isPresent());
+        log.info("Second param is present: "+integerB.isPresent());
+        //返回Optional所包含的引用,若引用缺失,返回指定的值
+        Integer integerC = integerA.orElse(0);
+        //返回所包含的实例,它必须存在,通常在调用该方法时会调用isPresent()判断是否为null
+        Integer integerD = integerB.get();
+        return integerC + integerD;
+    }
+
+    public static String NotNullString(Optional<String> stri) {
+        return stri.isPresent() ? stri.toString() : null;
+    }
+
 
     public static void main(String[] args) {
         Integer integerA = null;
@@ -21,17 +35,7 @@ public class OptionalDemo {
         Optional<Integer> integerC =Optional.ofNullable(integerA);
         //返回包含给定的非空引用Optional实例
         Optional<Integer> integerD = Optional.of(integerB);
-        LOGGER.info("The sum of two number is = {}", sum(integerC, integerD));
+        log.info("The sum of two number is = {}", sum(integerC, integerD));
     }
 
-    private static Integer sum(Optional<Integer> integerA, Optional<Integer> integerB) {
-        //isPresent():如果Optional包含非null的引用（引用存在），返回true
-        LOGGER.info("First param is present: " + integerA.isPresent());
-        LOGGER.info("Second param is present: "+integerB.isPresent());
-        //返回Optional所包含的引用,若引用缺失,返回指定的值
-        Integer integerC = integerA.orElse(0);
-        //返回所包含的实例,它必须存在,通常在调用该方法时会调用isPresent()判断是否为null
-        Integer integerD = integerB.get();
-        return integerC + integerD;
-    }
 }

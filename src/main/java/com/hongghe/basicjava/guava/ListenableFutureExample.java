@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
  *
  * @author hongghe 06/08/2018
  */
-public class ListenableFutureDemo {
+public class ListenableFutureExample {
 
     private Executors executors;
 

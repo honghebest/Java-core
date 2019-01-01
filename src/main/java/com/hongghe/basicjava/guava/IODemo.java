@@ -3,8 +3,7 @@ package com.hongghe.basicjava.guava;
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.io.Files;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,13 +14,12 @@ import java.util.List;
  *
  * @author hongghe 06/08/2018
  */
+@Slf4j
 public class IODemo {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(IODemo.class);
 
     public static void main(String[] args) {
         File file=new File(System.getProperty("test.txt"));
-        LOGGER.info("The file context is = {}", file);
+        log.info("The file context is = {}", file);
     }
 
     /** 写文件*/

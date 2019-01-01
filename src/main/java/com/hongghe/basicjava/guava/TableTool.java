@@ -10,7 +10,7 @@ import java.util.Set;
  *
  * @author hongghe 06/08/2018
  */
-public class TableDemo {
+public class TableTool {
 
     public static void main(String[] args) {
         //记录学生在某门课上的成绩

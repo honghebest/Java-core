@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * @author hongghe 06/08/2018
  */
-public class JoinerDemo {
+public class JoinerExample {
 
     public static void main(String[] args) {
        /*

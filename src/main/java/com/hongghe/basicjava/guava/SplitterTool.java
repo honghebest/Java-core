@@ -2,7 +2,7 @@ package com.hongghe.basicjava.guava;
 
 import com.google.common.base.Splitter;
 
-public class SplitterDemo {
+public class SplitterTool {
 
     public static void main(String[] args) {
        /*

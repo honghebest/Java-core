@@ -1,4 +1,6 @@
 package com.hongghe.basicjava.collections;
 
-public class PackageInfo {
-}
+
+/**
+ * Java的基本的数据类型
+ */

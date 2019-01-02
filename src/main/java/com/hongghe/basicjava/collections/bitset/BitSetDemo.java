@@ -1,16 +1,11 @@
 package com.hongghe.basicjava.collections.bitset;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.BitSet;
 
 /**
  * @author hongghe 2018/8/25
  */
 public class BitSetDemo {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(BitSetDemo.class);
 
     public static void main(String[] args) {
         BitSet bitSet = new BitSet();

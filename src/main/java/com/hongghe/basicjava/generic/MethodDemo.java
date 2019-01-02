@@ -17,4 +17,11 @@ public class MethodDemo {
     public <T> T getMiddleNumber(T[] t) {
         return t[t.length/2];
     }
+
+    public <Response> Response getResponse(Response response) {
+        if (response == null) {
+            return null;
+        }
+        return response;
+    }
 }

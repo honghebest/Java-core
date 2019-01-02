@@ -17,6 +17,7 @@ public class AtomicOperationDemo {
 static AtomicInteger count=new AtomicInteger(0);
 
 public static class AddThread implements Runnable{
+
     @Override
     public void run() {
         for(int k=0;k<1000;k++){

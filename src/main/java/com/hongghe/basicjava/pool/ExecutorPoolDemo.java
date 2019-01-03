@@ -1,9 +1,5 @@
 package com.hongghe.basicjava.pool;
 
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-
 /**
  * @author hongghe 2018/8/25
  */

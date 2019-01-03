@@ -6,6 +6,8 @@ package com.hongghe.basicjava.collections.enums;
 public class SimpleEnum {
 
     public static void main(String[] args) {
-
+        if (FruitEnum.APPLE.equals(FruitEnum.APPLE)) {
+            System.out.println("The is equal.");
+        }
     }
 }

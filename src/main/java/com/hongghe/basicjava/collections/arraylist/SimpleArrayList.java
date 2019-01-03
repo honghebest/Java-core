@@ -12,6 +12,12 @@ public class SimpleArrayList {
     public static void main(String[] args) {
         // 继承顺序进出
         List<String> demoList = new LinkedList<>();
+        demoList.size();
+        demoList.add("1");
+        demoList.addAll(new LinkedList<>());
+        demoList.contains("1");
+        demoList.isEmpty();
+        demoList.get(1);
         // 随机进出
         List<String> stringList = new ArrayList<>();
     }

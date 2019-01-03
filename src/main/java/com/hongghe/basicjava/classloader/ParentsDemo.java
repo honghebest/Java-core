@@ -9,7 +9,6 @@ public class ParentsDemo {
         System.out.println("ClassLoaderText类的加载器的名称:" + ParentsDemo.class.getClassLoader().getClass().getName());
         System.out.println("System类的加载器的名称:" + System.class.getClassLoader());
         System.out.println("List类的加载器的名称:" + List.class.getClassLoader());
-
         ClassLoader cl = ParentsDemo.class.getClassLoader();
         while (cl != null) {
             System.out.print(cl.getClass().getName() + "->");

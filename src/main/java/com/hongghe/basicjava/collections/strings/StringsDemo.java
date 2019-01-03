@@ -1,19 +1,21 @@
 package com.hongghe.basicjava.collections.strings;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author hongghe 2018/8/23
  */
+@Slf4j
 public class StringsDemo {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(StringsDemo.class);
-
-    public String stringsBuilder() {
+    public static String stringsBuilder() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(1);
-        LOGGER.info("The string builder operation is = {}", stringBuilder);
+        log.info("The string builder operation is = {}", stringBuilder);
         return stringBuilder.toString();
+    }
+
+    public static void main(String[] args) {
+        stringsBuilder();
     }
 }

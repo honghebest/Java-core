@@ -1,11 +1,19 @@
 package com.hongghe.basicjava.collections.bitset;
 
 import java.util.BitSet;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * @author hongghe 2018/8/25
  */
 public class BitSetDemo {
+
+    public static void getSetEntity() {
+        Set<Integer> set = new TreeSet<>();
+        Set<String> stringSet = new HashSet<>();
+    }
 
     public static void main(String[] args) {
         BitSet bitSet = new BitSet();

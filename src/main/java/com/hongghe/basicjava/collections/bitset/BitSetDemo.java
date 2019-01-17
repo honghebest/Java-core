@@ -33,6 +33,7 @@ public class BitSetDemo {
                 bits2.set(i);
             }
         }
+
         System.out.println("Initial pattern in bits1: ");
         System.out.println(bits1);
         System.out.println("\nInitial pattern in bits2: ");

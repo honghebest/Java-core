@@ -1,7 +1,6 @@
 package com.hongghe.basicjava.lock;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +12,8 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  * @author hongghe 31/07/2018
  */
+@Slf4j
 public class ReentrantLockDemo {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(ReentrantLockDemo.class);
 
     private ReentrantLock reentrantLock = new ReentrantLock();
     private Condition condition = reentrantLock.newCondition();
@@ -35,10 +33,10 @@ public class ReentrantLockDemo {
                     try {
                         condition.await();
                     } catch (InterruptedException e) {
-                        LOGGER.info("The interrupted exception = {}", e);
+                        log.info("The interrupted exception = {}", e);
                     }
                 } else {
-                    LOGGER.info("The name of thread is " + Thread.currentThread().getName() + "add Integer");
+                    log.info("The name of thread is " + Thread.currentThread().getName() + "add Integer");
                     listBuffer.add(i++);
                     condition.signalAll();
                 }
@@ -59,12 +57,12 @@ public class ReentrantLockDemo {
                     try {
                         condition.await();
                     } catch (InterruptedException e) {
-                        LOGGER.info("The interrupted exception = {}", e);
+                        log.info("The interrupted exception = {}", e);
                     }
                 } else {
-                    LOGGER.info("The name of thread is " + Thread.currentThread().getName() + "get Integer");
+                    log.info("The name of thread is " + Thread.currentThread().getName() + "get Integer");
                     long beginTime = 0;
-                    LOGGER.info("The listBuffer" + listBuffer);
+                    log.info("The listBuffer" + listBuffer);
                     beginTime = System.currentTimeMillis();
                     while (System.currentTimeMillis() - beginTime < 100) {
 
@@ -107,7 +105,7 @@ public class ReentrantLockDemo {
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
-            LOGGER.info("The interrupted exception = {}", e);
+            log.info("The interrupted exception = {}", e);
         }
     }
 }

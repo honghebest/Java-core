@@ -3,19 +3,21 @@ package com.hongghe.basicjava.lock;
 /**
  * @author hongghe 2018/08/19
  */
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.util.concurrent.*;
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 /**
  * The future using
  *
  * @author hongghe 01/08/2018
  */
+@Slf4j
 public class FutureDemo {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(FutureDemo.class);
 
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newCachedThreadPool();
@@ -26,19 +28,19 @@ public class FutureDemo {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-            LOGGER.info("The interrupted exception = {}", e);
+            log.info("The interrupted exception = {}", e);
         }
 
-        LOGGER.info("The main process is running.");
+        log.info("The main process is running.");
 
         try {
-            LOGGER.info("The task result is = {}", result.get());
+            log.info("The task result is = {}", result.get());
         } catch (InterruptedException e) {
-            LOGGER.info("The name of thread interrupted exception = {} ", e);
+            log.info("The name of thread interrupted exception = {} ", e);
         } catch (ExecutionException e) {
-            LOGGER.info("The execution exception = {}", e);
+            log.info("The execution exception = {}", e);
         }
 
-        LOGGER.info("All process is over.");
+        log.info("All process is over.");
     }
 }

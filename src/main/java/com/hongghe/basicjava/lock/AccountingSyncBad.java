@@ -4,6 +4,7 @@ package com.hongghe.basicjava.lock;
  * @author hongghe 2018/08/19
  */
 public class AccountingSyncBad implements Runnable{
+
     static int i=0;
     public synchronized void increase(){
         i++;

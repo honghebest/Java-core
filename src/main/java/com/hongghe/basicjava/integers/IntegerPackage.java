@@ -1,7 +1,6 @@
 package com.hongghe.basicjava.integers;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * java 基本类型的包装类的大部分都实现了常量池技术，即Byte,Short,Integer,Long,Character,Boolean；
@@ -10,23 +9,22 @@ import org.slf4j.LoggerFactory;
  *
  * @author hongghe 2018/8/23
  */
+@Slf4j
 public class IntegerPackage {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(IntegerPackage.class);
 
     public void compareTwoInteger() {
         Integer o1 = 11;
         Integer o2 = 11;
         // true
-        LOGGER.info("o1 == o2 = {}",o1 == o2);
+        log.info("o1 == o2 = {}",o1 == o2);
         Float o3 = 1.0f;
         Float o4 = 1.0f;
         // false
-        LOGGER.info("o3 == o4 = {}", o3 == o4);
+        log.info("o3 == o4 = {}", o3 == o4);
         Double o5 = 11.1;
         Double o6 = 11.1;
         // false
-        LOGGER.info("o5 == o6 = {}", o5 == o6);
+        log.info("o5 == o6 = {}", o5 == o6);
     }
 
     public void compare() {
@@ -37,12 +35,16 @@ public class IntegerPackage {
         Integer o5 = new Integer(40);
         Integer o6 = new Integer(0);
 
-        LOGGER.info("o1 = o2   = {}" , (o1 == o2));
-        LOGGER.info("o1 = o2+o3   = {}",   (o1 == o2 + o3));
-        LOGGER.info("o1 = o4   = {}" , (o1 == o4));
-        LOGGER.info("o4 = o5   = {}" , (o4 == o5));
-        LOGGER.info("o4 = o5+o6   = {}" ,  (o4 == o5 + o6));
-        LOGGER.info("40 = o5+o6   = {}" ,  (40 == o5 + o6));
+        Integer o7 = 200;
+        Integer o8 = 200;
+
+        log.info("o1 = o2   = {}" , (o1 == o2));
+        log.info("o1 = o2+o3   = {}",   (o1 == o2 + o3));
+        log.info("o1 = o4   = {}" , (o1 == o4));
+        log.info("o4 = o5   = {}" , (o4 == o5));
+        log.info("o4 = o5+o6   = {}" ,  (o4 == o5 + o6));
+        log.info("40 = o5+o6   = {}" ,  (40 == o5 + o6));
+        log.info("o7 = o8   = {}" , (o7 == o8));
     }
 
     public static void main(String[] args) {

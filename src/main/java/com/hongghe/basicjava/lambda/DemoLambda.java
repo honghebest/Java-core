@@ -6,5 +6,5 @@ package com.hongghe.basicjava.lambda;
 @FunctionalInterface
 public interface DemoLambda {
 
-    public void run();
+    void run();
 }

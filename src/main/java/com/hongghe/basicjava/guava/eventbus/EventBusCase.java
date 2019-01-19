@@ -3,6 +3,7 @@ package com.hongghe.basicjava.guava.eventbus;
 import com.google.common.eventbus.DeadEvent;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,9 +12,8 @@ import org.slf4j.LoggerFactory;
  *
  * @author hongghe 06/08/2018
  */
+@Slf4j
 public class EventBusCase {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(EventBusCase.class);
 
     public void registerEvent() {
         EventBus eventBus = new EventBus("hello_world");
@@ -38,7 +38,7 @@ public class EventBusCase {
         @Subscribe
         public void listen(DeadEvent event) {
             isDelivered = false;
-            LOGGER.info("The info = {}", event.getSource().getClass(), event.getEvent());
+            log.info("The info = {}", event.getSource().getClass(), event.getEvent());
         }
 
         public boolean isDelivered() {

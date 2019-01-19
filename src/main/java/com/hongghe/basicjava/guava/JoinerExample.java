@@ -15,10 +15,11 @@ import java.util.Map;
 public class JoinerExample {
 
     public static void main(String[] args) {
-       /*
-         on:制定拼接符号，如：test1-test2-test3 中的 “-“ 符号
-         skipNulls()：忽略NULL,返回一个新的Joiner实例
-         useForNull(“Hello”)：NULL的地方都用字符串”Hello”来代替
+
+       /**
+        * on:制定拼接符号，如：test1-test2-test3 中的 “-“ 符号
+        * skipNulls()：忽略NULL,返回一个新的Joiner实例
+        * useForNull(“Hello”)：NULL的地方都用字符串”Hello”来代替
         */
         StringBuilder sb=new StringBuilder();
         Joiner.on(",").skipNulls().appendTo(sb,"Hello","guava");

@@ -11,6 +11,9 @@ public class AudiCar implements Cloneable {
 
     private String type;
 
+    /**
+     * The deep copy of clone.
+     */
     @Override
     public Object clone() {
         AudiCar car = null;

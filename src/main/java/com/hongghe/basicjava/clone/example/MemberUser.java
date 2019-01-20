@@ -2,8 +2,6 @@ package com.hongghe.basicjava.clone.example;
 
 import lombok.Data;
 
-import java.io.IOException;
-
 /**
  * @author hongghe 2018/12/12
  */

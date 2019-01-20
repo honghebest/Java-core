@@ -5,5 +5,8 @@ package com.hongghe.basicjava.clone.example;
  */
 public interface RunProperies {
 
-
+    /**
+     * 是否有跑步的功能。
+     */
+    boolean isRunn();
 }

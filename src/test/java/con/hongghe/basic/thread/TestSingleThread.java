@@ -21,6 +21,7 @@ public class TestSingleThread {
 
     @Test
     public void testSingle() {
+        log.debug("The test of test single.");
         singleThread.singleThread();
     }
 }

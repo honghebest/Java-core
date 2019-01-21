@@ -6,4 +6,8 @@ package com.hongghe.basicjava.classloader;
  * @author hongghe 01/08/2018
  */
 public class PackageInfo {
+
+    public static void main(String[] args) {
+        System.out.print("obj");
+    }
 }

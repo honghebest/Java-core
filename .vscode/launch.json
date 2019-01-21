@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestMyClassLoader",
+            "request": "launch",
+            "mainClass": "com.hongghe.basicjava.classloader.TestMyClassLoader",
+            "projectName": "BasicJava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PackageInfo",
+            "request": "launch",
+            "mainClass": "com.hongghe.basicjava.classloader.PackageInfo",
+            "projectName": "BasicJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CloneEventDemo",
             "request": "launch",
             "mainClass": "com.hongghe.basicjava.clone.CloneEventDemo",

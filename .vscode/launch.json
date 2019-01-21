@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CloneEventDemo",
+            "request": "launch",
+            "mainClass": "com.hongghe.basicjava.clone.CloneEventDemo",
+            "projectName": "BasicJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NioWrite",
             "request": "launch",
             "cwd": "${workspaceFolder}",

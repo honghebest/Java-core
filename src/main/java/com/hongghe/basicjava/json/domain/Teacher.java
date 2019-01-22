@@ -1,6 +1,9 @@
 package com.hongghe.basicjava.json.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.List;
 
@@ -10,6 +13,9 @@ import java.util.List;
  * @author hongghe 10/08/2018
  */
 @Data
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Teacher {
     private String name;
     private Integer age;

@@ -36,7 +36,7 @@ public static class AddThread implements Runnable {
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
+            Thread.currentThread();
             e.printStackTrace();
         }
 

@@ -1,4 +1,4 @@
-package com.hongghe.basicjava.oop.Packaging;
+package com.hongghe.basicjava.oop.packaging;
 
 /**
  * Java的封装的特性

@@ -16,7 +16,7 @@ public class AtomicOperationDemo {
 
 static AtomicInteger count=new AtomicInteger(0);
 
-public static class AddThread implements Runnable{
+public static class AddThread implements Runnable {
 
     @Override
     public void run() {
@@ -25,12 +25,12 @@ public static class AddThread implements Runnable{
         }
     }
 }
-    public static void AtomicIntShow(){
+    public static void AtomicIntShow() {
         System.out.println("AtomicIntShow() enter");
-        ExecutorService threadpool =   Executors.newFixedThreadPool(10);
+        ExecutorService threadPool =   Executors.newFixedThreadPool(10);
 
-        for(int k=0;k<100;k++){
-            threadpool.submit(new AddThread());
+        for(int k=0; k<100; k++) {
+            threadPool.submit(new AddThread());
         }
 
         try {
@@ -41,10 +41,9 @@ public static class AddThread implements Runnable{
         }
 
         System.out.println("result of acumulated sum="+count);
-        threadpool.shutdown();
+        threadPool.shutdown();
         System.out.println("AtomicIntShow() exit");
         return ;
-
     }
 }
 

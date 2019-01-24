@@ -9,6 +9,6 @@ import java.util.Date;
  */
 @Data
 public class OperationSystem {
-    public final String name;
-    public final Date bornTime;
+    public String name;
+    public Date bornTime;
 }

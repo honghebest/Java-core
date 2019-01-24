@@ -33,13 +33,8 @@ public class IOExceptionMain {
         } catch (IOException e) {
             System.out.println("The IOException.");
         } finally {
-            switch (num) {
-                case 3:
-                    break;
-                    default:
-                        num++;
-            }
             System.out.println("The finally operation.");
+          num ++;
         }
     }
 }

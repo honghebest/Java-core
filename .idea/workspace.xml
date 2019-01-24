@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227e42b3-3893-4597-8f29-f409b6439b72" name="Default" comment="Java inherit.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/error/RunningErrorMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/exception/IOExceptionMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/concurrency/AtomicOperationDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/concurrency/AtomicOperationDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/error/RunningErrorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/error/RunningErrorMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/exception/IOExceptionMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/exception/IOExceptionMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +44,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/lock/ReentrantLockDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/lambda/DemoLambdaImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/lambda/DemoOptional.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/guava/eventbus/EventBusCase.java" />
@@ -96,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/integer/IntegerMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/concurrency/AtomicOperationDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/exception/IOExceptionMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/error/RunningErrorMain.java" />
       </list>
     </option>
   </component>
@@ -166,6 +165,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basicjava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BasicJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BasicJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basicjava" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BasicJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BasicJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basicjava" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BasicJava" type="b2602c69:ProjectViewProjectNode" />
@@ -265,7 +282,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/hongghe/work/BasicJava/src/main/java/com/hongghe/basicjava/compare/ObjectComparer.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548300772835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548301524431" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -281,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IOExceptionMain">
+  <component name="RunManager" selected="Application.RunningErrorMain">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -330,20 +347,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hongghe.basicjava.oop.polymorphism.ManRunner" />
-      <module name="JavaCore" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hongghe.basicjava.oop.polymorphism.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PackageMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hongghe.basicjava.oop.packaging.PackageMain" />
       <module name="JavaCore" />
@@ -351,6 +354,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hongghe.basicjava.oop.packaging.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunningErrorMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hongghe.basicjava.error.RunningErrorMain" />
+      <module name="JavaCore" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hongghe.basicjava.error.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -396,19 +413,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.BasicJavaApplication" />
-      <item itemvalue="Application.ManRunner" />
       <item itemvalue="Application.PackageMain" />
       <item itemvalue="Application.DoublesTest" />
       <item itemvalue="Application.IntegerMain" />
       <item itemvalue="Application.IOExceptionMain" />
+      <item itemvalue="Application.RunningErrorMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunningErrorMain" />
         <item itemvalue="Application.IOExceptionMain" />
         <item itemvalue="Application.IntegerMain" />
         <item itemvalue="Application.DoublesTest" />
         <item itemvalue="Application.PackageMain" />
-        <item itemvalue="Application.ManRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -450,7 +467,7 @@
       <workItem from="1548040146050" duration="1196000" />
       <workItem from="1548051017780" duration="2816000" />
       <workItem from="1548126600508" duration="2004000" />
-      <workItem from="1548297880595" duration="2847000" />
+      <workItem from="1548297880595" duration="3368000" />
     </task>
     <task id="LOCAL-00001" summary="Add the single thread process.">
       <created>1542524070148</created>
@@ -655,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548300067005</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Java inherit.">
+      <created>1548301011093</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1548301011093</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -670,7 +694,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61792000" />
+    <option name="totallyTimeSpent" value="62313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -792,13 +816,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/json/ArrayListParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/json/domain/Bird.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1183,13 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/error/RunningErrorMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/io/IOException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1199,11 +1209,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/exception/IOExceptionMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="540">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/error/RunningErrorMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>

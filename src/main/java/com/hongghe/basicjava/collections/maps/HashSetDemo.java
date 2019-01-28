@@ -1,5 +1,7 @@
 package com.hongghe.basicjava.collections.maps;
 
+import com.google.gson.Gson;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,6 +15,7 @@ public class HashSetDemo {
         set.add("name");
         set.add("hello");
         set.add("name");
+        System.out.println(new Gson().toJson(set));
         System.out.println(set.size());
     }
 }

@@ -9,6 +9,6 @@ import java.util.WeakHashMap;
 public class WeekHashMapDemo {
 
     public static void main(String[] args) {
-        Map<String, Integer> map = new WeakHashMap();
+        Map<String, Integer> weakHashMap = new WeakHashMap();
     }
 }

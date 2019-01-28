@@ -19,7 +19,7 @@ public class ComparatorDemo {
         List<Person> personList = Arrays.asList(
                 new Person("a", 1),
                 new Person("b", 22),
-                new Person("c", 3));
+                new Person("c", 1));
 
         Collections.sort(personList, new LexicographicComparator());
         Gson gson = new Gson();

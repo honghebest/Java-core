@@ -37,7 +37,6 @@ public class IntegerPackage {
 
         Integer o7 = 200;
         Integer o8 = 200;
-
         log.info("o1 = o2   = {}" , (o1 == o2));
         log.info("o1 = o2+o3   = {}",   (o1 == o2 + o3));
         log.info("o1 = o4   = {}" , (o1 == o4));

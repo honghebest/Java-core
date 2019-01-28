@@ -5,7 +5,7 @@ package com.hongghe.basicjava.integer;
  */
 public class IntegerMain {
 
-    static Integer num = 23;
+    public static Integer num = 23;
 
     public static void firstMethod() {
         System.out.println(num++);

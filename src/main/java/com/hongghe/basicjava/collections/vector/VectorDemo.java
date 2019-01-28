@@ -1,5 +1,7 @@
 package com.hongghe.basicjava.collections.vector;
 
+import com.google.gson.Gson;
+
 import java.util.Vector;
 
 /**
@@ -16,5 +18,6 @@ public class VectorDemo<E> {
         vector.add("name");
         vector.add(1, "name");
         vector.size();
+        System.out.println(new Gson().toJson(vector));
     }
 }

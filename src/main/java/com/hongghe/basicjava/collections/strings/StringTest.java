@@ -1,14 +1,12 @@
 package com.hongghe.basicjava.collections.strings;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author hongghe 2018/8/23
  */
+@Slf4j
 public class StringTest {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(StringTest.class);
 
     /**
      * 比较两个初始化方式不同的字符串
@@ -17,9 +15,9 @@ public class StringTest {
     public void compareTwoStrings() {
         String o1 = "string";
         String o2 = new String("string");
-        LOGGER.info("比较两个字符串");
-        LOGGER.info("o1 == o2", (o1 == o2));
-        LOGGER.info("o1.equal(o2)", o1.equalsIgnoreCase(o2));
+        log.info("比较两个字符串");
+        log.info("o1 == o2", (o1 == o2));
+        log.info("o1.equal(o2)", o1.equalsIgnoreCase(o2));
     }
 
     /**
@@ -29,9 +27,9 @@ public class StringTest {
         String o1 = new String("string");
         String o2 = o1.intern();
         String o3 = "string";
-        LOGGER.info("The o2 = {}", o2);
-        LOGGER.info("o1 == o2 = {}", o1 == o2);
-        LOGGER.info("o1 == o3 = {}", o1 == o3);
+        log.info("The o2 = {}", o2);
+        log.info("o1 == o2 = {}", o1 == o2);
+        log.info("o1 == o3 = {}", o1 == o3);
     }
 
     /**
@@ -43,9 +41,9 @@ public class StringTest {
         String o3 = o1 + o2;
         String o4 = "str" + "ing";
         String o5 = "string";
-        LOGGER.info("o3 == o4 = {}", o3 == o4);
-        LOGGER.info("o3 == o5 = {}", o3 == o5);
-        LOGGER.info("o4 == o5 = {}", o4 == o5);
+        log.info("o3 == o4 = {}", o3 == o4);
+        log.info("o3 == o5 = {}", o3 == o5);
+        log.info("o4 == o5 = {}", o4 == o5);
     }
 
     /**
@@ -54,8 +52,8 @@ public class StringTest {
     public void compareTwoString() {
         String o1 = new String("string");
         String o2 = "string";
-        LOGGER.info("o1 == o2 = {}", o1 == o2);
-        LOGGER.info("o1.equal(o2) = {}", o1.equals(o2));
+        log.info("o1 == o2 = {}", o1 == o2);
+        log.info("o1.equal(o2) = {}", o1.equals(o2));
     }
 
     public static void main(String[] args) {

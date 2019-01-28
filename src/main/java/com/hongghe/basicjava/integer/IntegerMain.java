@@ -15,11 +15,12 @@ public class IntegerMain {
 
     public void secondMethod() {
         int obj = 23;
-        System.out.println();
+        System.out.println(obj);
     }
 
     public static void main(String[] args) {
         IntegerMain integerMain = new IntegerMain();
         firstMethod();
+        integerMain.secondMethod();
     }
 }

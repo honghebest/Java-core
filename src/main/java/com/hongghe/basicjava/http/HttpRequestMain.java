@@ -5,7 +5,7 @@ import okhttp3.OkHttpClient;
 /**
  * @author hongghe 2018/9/30
  */
-public class RequestDemo {
+public class HttpRequestMain {
 
     OkHttpClient okHttpClient;
 }

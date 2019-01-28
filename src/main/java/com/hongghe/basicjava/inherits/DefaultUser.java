@@ -16,7 +16,7 @@ public class DefaultUser {
     }
 
     public String userType(Class<?> clazz) {
-        if (clazz.getClass().getName().equalsIgnoreCase(this.getClass().getName())) {
+        if (clazz.getName().equals(this.getClass().getName())) {
             return "Yes";
         }
         return null;

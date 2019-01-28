@@ -23,4 +23,12 @@ public interface UserMember {
      */
     Boolean userRegister(Long mobile);
 
+    /**
+     * user in white list or not.
+     * @param uid user uid.
+     * @param mobile user mobile
+     * @return result
+     */
+    Boolean whiteList(Long uid, String mobile);
+
 }

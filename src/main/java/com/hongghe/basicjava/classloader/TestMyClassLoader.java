@@ -8,6 +8,7 @@ package com.hongghe.basicjava.classloader;
 public class TestMyClassLoader {
 
     public static void main(String[] args) throws Exception {
+        
         MyClassLoader mcl = new MyClassLoader();
         Class<?> c1 = Class.forName("com.hongghe.basicjava.domain.Person", true, mcl);
         Object obj = c1.newInstance();

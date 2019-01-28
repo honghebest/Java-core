@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LoaderSortDemoTest",
+            "request": "launch",
+            "mainClass": "com.hongghe.basicjava.classloader.LoaderSortDemoTest",
+            "projectName": "BasicJava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LoaderSortDemo",
+            "request": "launch",
+            "mainClass": "com.hongghe.basicjava.classloader.LoaderSortDemo",
+            "projectName": "BasicJava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LoaderDemo",
+            "request": "launch",
+            "mainClass": "com.hongghe.basicjava.classloader.LoaderDemo",
+            "projectName": "BasicJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestMyClassLoader",
             "request": "launch",
             "mainClass": "com.hongghe.basicjava.classloader.TestMyClassLoader",

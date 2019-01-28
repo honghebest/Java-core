@@ -1,6 +1,7 @@
 package com.hongghe.basicjava.collections.maps;
 
 import com.google.common.collect.ImmutableMap;
+import com.google.gson.Gson;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +24,7 @@ public class AtomicReferenceDemo {
         map.put("key0", "value0");
         map.put("key1", "value1");
         atomicReference.set(ImmutableMap.copyOf(map));
-        System.out.println(atomicReference);
+        System.out.println(new Gson().toJson(atomicReference));
     }
 
     public static void immutableReference() {
@@ -33,7 +34,7 @@ public class AtomicReferenceDemo {
         map.put("key0", "value0");
         map.put("key1", "value1");
         atomicReference.set(ImmutableMap.copyOf(map));
-        System.out.println(atomicReference);
+        System.out.println(new Gson().toJson(atomicReference));
     }
 
     public static void builderImmutable() {
@@ -43,6 +44,6 @@ public class AtomicReferenceDemo {
                 .put("key1", "value1")
                 .put("key2", "value2")
                 .build();
-       System.out.println(immutableMap);
+       System.out.println(new Gson().toJson(immutableMap));
     }
 }

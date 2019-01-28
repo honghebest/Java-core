@@ -1,19 +1,17 @@
 package com.hongghe.basicjava.generic;
 
 import com.google.gson.Gson;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * The get information of generic.
  *
  * @author hongghe 28/07/2018
  */
+@Slf4j
 public class UerGeneric<T> {
 
     private T user;
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(UerGeneric.class);
 
     public void UserGeneric(T user) {
         this.user = user;
@@ -25,11 +23,11 @@ public class UerGeneric<T> {
 
     public void userInformation(T user) throws Exception {
         Gson gson = new Gson();
-        LOGGER.info("The user information is " + gson.toJson(user));
+        log.info("The user information is " + gson.toJson(user));
     }
 
     public void shwoUser(UerGeneric<?> uerGeneric) {
         Gson gson = new Gson();
-        LOGGER.info("The user name if " + gson.toJson(uerGeneric.getUser()));
+        log.info("The user name if " + gson.toJson(uerGeneric.getUser()));
     }
 }

@@ -8,5 +8,5 @@ package com.hongghe.basicjava.generic;
  */
 public interface UserHandler<T, V> {
 
-    public void init(T t, V v);
+    void init(T t, V v);
 }

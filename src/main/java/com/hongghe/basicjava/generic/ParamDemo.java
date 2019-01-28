@@ -17,4 +17,8 @@ public class ParamDemo {
         }
         return max;
     }
+
+    public static void main(String[] args) {
+        ParamDemo paramDemo = new ParamDemo();
+    }
 }

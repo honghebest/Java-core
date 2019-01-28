@@ -1,10 +1,12 @@
 package com.hongghe.basicjava.generic;
 
 import com.google.gson.Gson;
+import lombok.ToString;
 
 /**
  * @author hongghe 2019/1/1
  */
+@ToString
 public class UserHandlerMethod implements UserHandler {
 
     private String name;

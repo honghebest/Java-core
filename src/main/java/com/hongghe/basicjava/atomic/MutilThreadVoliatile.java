@@ -15,4 +15,8 @@ public class MutilThreadVoliatile {
     public int getCount() {
         return count;
     }
+
+    public synchronized void adderDouble() {
+        count +=2;
+    }
 }

@@ -12,6 +12,7 @@ public class MutilThreadAtomic {
     public void increment() {
         count.incrementAndGet();
     }
+
     //使用AtomicInteger之后，不需要加锁，也可以实现线程安全。
     public int getCount() {
         return count.get();

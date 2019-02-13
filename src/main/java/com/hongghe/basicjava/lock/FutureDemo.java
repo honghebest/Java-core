@@ -19,12 +19,21 @@ import java.util.concurrent.Future;
 @Slf4j
 public class FutureDemo {
 
+    private ExecutorService threadExecutorService = Executors.newCachedThreadPool();
+    public void addDouble() {
+        threadExecutorService.submit(new Runnable() {
+            @Override
+            public void run() {
+                // TODO
+            }
+        });
+    }
+
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newCachedThreadPool();
         Task task = new Task();
         Future<Integer> result = executorService.submit(task);
         executorService.shutdown();
-
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -32,7 +41,6 @@ public class FutureDemo {
         }
 
         log.info("The main process is running.");
-
         try {
             log.info("The task result is = {}", result.get());
         } catch (InterruptedException e) {

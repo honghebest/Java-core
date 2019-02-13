@@ -6,7 +6,7 @@ package com.hongghe.basicjava.lock;
 public class AccountingSync implements Runnable {
 
     /** 共享资源(临界资源)*/
-    static int i = 0;
+    private static volatile int i = 0;
 
     /**
      * synchronized 修饰实例方法的实现
@@ -22,7 +22,7 @@ public class AccountingSync implements Runnable {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         AccountingSync instance = new AccountingSync();
         Thread t1 = new Thread(instance);
         Thread t2 = new Thread(instance);

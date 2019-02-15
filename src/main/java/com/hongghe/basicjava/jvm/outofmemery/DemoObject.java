@@ -6,5 +6,10 @@ package com.hongghe.basicjava.jvm.outofmemery;
  * @author hongghe 2018/08/23
  */
 public class DemoObject{
+
     public Object instance = null;
+
+    public static void main(String[] args) {
+        // TODO
+    }
 }

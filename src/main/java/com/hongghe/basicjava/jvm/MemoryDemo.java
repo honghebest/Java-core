@@ -7,9 +7,9 @@ import org.slf4j.LoggerFactory;
 import java.util.HashSet;
 import java.util.Set;
 
-public class MemeryDemo {
+public class MemoryDemo {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MemeryDemo.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(MemoryDemo.class);
 
     public static void main(String[] args) {
         Set<Person> personSet = new HashSet<Person>();

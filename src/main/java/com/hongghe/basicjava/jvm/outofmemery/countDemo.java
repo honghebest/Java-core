@@ -6,7 +6,6 @@ package com.hongghe.basicjava.jvm.outofmemery;
 public class countDemo{
 
     public static void main(String [] args){
-
         DemoObject object1 = new DemoObject();//(1) object1引用计数器 = 1
         DemoObject object2 = new DemoObject();//(2) obejct2 引用计数器 = 1
         object1.instance = object2;//(3) object2引用计数器 = 2

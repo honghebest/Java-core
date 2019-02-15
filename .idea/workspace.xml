@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227e42b3-3893-4597-8f29-f409b6439b72" name="Default" comment="proxy setting.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/AQS/BlockQueueMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/AQS/InterceptionExceptionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/CallableFutureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/RunnableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/time/CalenderMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/lock/PackageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/MemeryMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/MemeryMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/DemoObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/DemoObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/OutOfMemery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/OutOfMemery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/countDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/countDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +17,87 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/time/CalenderMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+              <folding>
+                <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/reference/PhantomReference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/reference/SoftReference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/countDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/DemoObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/MemeryMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/OutOfMemery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="1663" column="31" lean-forward="true" selection-start-line="1663" selection-start-column="31" selection-end-line="1663" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,11 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/inherits/VisitorMember.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/inherits/DefaultUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/HttpResponseMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/interfaces/UserMember.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/interfaces/UserMemberService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/WebClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/WebServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/WebSocket.java" />
@@ -100,6 +174,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/RunnableTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/CallableFutureTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/time/CalenderMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/OutOfMemery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/countDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/DemoObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/MemeryMethod.java" />
       </list>
     </option>
   </component>
@@ -126,9 +205,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="148" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1920" />
     <option name="height" value="1200" />
   </component>
@@ -140,6 +217,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,7 +258,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basicjava" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basicjava" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+              <item name="outofmemery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaCore" type="b2602c69:ProjectViewProjectNode" />
@@ -226,14 +314,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/hongghe/work/BasicJava/src/main/java/com/hongghe/basicjava/compare/ObjectComparer.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550143667722" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550214418018" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -427,14 +514,8 @@
       <workItem from="1549952390614" duration="3065000" />
       <workItem from="1550047761165" duration="4719000" />
       <workItem from="1550127845722" duration="1456000" />
-      <workItem from="1550135147314" duration="1367000" />
-    </task>
-    <task id="LOCAL-00002" summary="Add the single thread process.">
-      <created>1543152224124</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1543152224125</updated>
+      <workItem from="1550135147314" duration="1406000" />
+      <workItem from="1550197191611" duration="903000" />
     </task>
     <task id="LOCAL-00003" summary="Add the single thread process.">
       <created>1543152839567</created>
@@ -772,7 +853,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550113109374</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="proxy setting.">
+      <created>1550143990184</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1550143990184</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -787,12 +875,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84458000" />
+    <option name="totallyTimeSpent" value="85400000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="148" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21086262" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21299255" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -893,73 +982,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/inherits/MethodUsingMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/inherits/FiledMethodMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/HttpMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/HttpRequestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/proxy/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/proxy/Package.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/proxy/Me.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/proxy/ProxyMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/proxy/TicketBull.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1294,6 +1316,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="1663" column="31" lean-forward="true" selection-start-line="1663" selection-start-column="31" selection-end-line="1663" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/time/CalenderMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/reference/PhantomReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/reference/SoftReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/countDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/OutOfMemery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/outofmemery/DemoObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/MemeryMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

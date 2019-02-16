@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227e42b3-3893-4597-8f29-f409b6439b72" name="Default" comment="proxy setting.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadJoin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadNotify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadSleep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadWait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/JoinTestDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadJoin.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +15,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadJoin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="405">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+              <folding>
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/JoinTestDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -84,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/WebSocket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/http/HttpMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/generic/UerGeneric.java" />
@@ -135,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/MemeryMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/jvm/MemoryMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadJoin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/JoinTestDemo.java" />
       </list>
     </option>
   </component>
@@ -266,7 +277,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/hongghe/work/BasicJava/src/main/java/com/hongghe/basicjava/compare/ObjectComparer.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550305310837" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550308827902" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -282,7 +293,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InterceptionExceptionDemo">
+  <component name="RunManager" selected="Application.JoinTestDemo">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -317,13 +328,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotifyAndWait" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hongghe.basicjava.process.NotifyAndWait" />
+    <configuration name="JoinTestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hongghe.basicjava.thread.JoinTestDemo" />
       <module name="JavaCore" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hongghe.basicjava.process.*" />
+          <option name="PATTERN" value="com.hongghe.basicjava.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -397,20 +408,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NotifyAndWait" />
       <item itemvalue="Application.ReflectMethod" />
       <item itemvalue="Application.GetClassObject" />
       <item itemvalue="Application.SemaphoreTest" />
       <item itemvalue="Application.InterceptionExceptionDemo" />
       <item itemvalue="Spring Boot.BasicJavaApplication" />
+      <item itemvalue="Application.JoinTestDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JoinTestDemo" />
         <item itemvalue="Application.InterceptionExceptionDemo" />
         <item itemvalue="Application.SemaphoreTest" />
         <item itemvalue="Application.GetClassObject" />
         <item itemvalue="Application.ReflectMethod" />
-        <item itemvalue="Application.NotifyAndWait" />
       </list>
     </recent_temporary>
   </component>
@@ -462,14 +473,7 @@
       <workItem from="1550127845722" duration="1456000" />
       <workItem from="1550135147314" duration="1406000" />
       <workItem from="1550197191611" duration="1090000" />
-      <workItem from="1550304300321" duration="144000" />
-    </task>
-    <task id="LOCAL-00004" summary="Add the single thread process.">
-      <created>1544601362570</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1544601362570</updated>
+      <workItem from="1550304300321" duration="587000" />
     </task>
     <task id="LOCAL-00005" summary="Add the single thread process.">
       <created>1545912752813</created>
@@ -807,7 +811,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550214427144</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="proxy setting.">
+      <created>1550305346591</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1550305346592</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -822,13 +833,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85731000" />
+    <option name="totallyTimeSpent" value="86174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21512248" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21512248" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -841,7 +852,7 @@
       <window_info id="Web" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35044247" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35044247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -929,13 +940,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/process/synchrony/SychronizedDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/process/cases/CAndPMethodOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1317,8 +1321,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/ThreadJoin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        <state relative-caret-position="405">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/thread/JoinTestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>

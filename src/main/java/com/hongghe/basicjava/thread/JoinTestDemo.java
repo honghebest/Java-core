@@ -10,6 +10,7 @@ public class JoinTestDemo {
         String threadName = Thread.currentThread().getName();
 
         System.out.println(threadName + " start.");
+
         ThreadJoin t1 = new ThreadJoin();
         CustomThread t = new CustomThread(t1);
         try {

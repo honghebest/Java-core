@@ -10,6 +10,7 @@ import java.util.concurrent.FutureTask;
 public class CallableThreadTest implements Callable<Integer> {
 
     public static void main(String[] args) {
+
         CallableThreadTest ctt = new CallableThreadTest();
         FutureTask<Integer> ft = new FutureTask<>(ctt);
         for(int i = 0; i < 100; i++) {

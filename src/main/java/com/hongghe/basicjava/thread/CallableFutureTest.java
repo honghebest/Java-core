@@ -11,7 +11,9 @@ import java.util.concurrent.FutureTask;
 public class CallableFutureTest implements Callable<Integer> {
 
         public static void main(String[] args) {
+
             CallableFutureTest callableFutureTest = new CallableFutureTest();
+
             FutureTask<Integer> futureTask = new FutureTask<>(callableFutureTest);
             for (int i=0; i<100; i++) {
                 System.out.println(Thread.currentThread().getName() + "的值" + i);

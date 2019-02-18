@@ -9,9 +9,7 @@ import java.util.concurrent.BlockingQueue;
  * @author: hongghe @date: 2019-02-14 15:07
  */
 public class InterceptionExceptionDemo {
-
     private BlockingQueue<Task> queue = new ArrayBlockingQueue<>(10);
-
 
     public Task getNextTask() throws InterruptedException {
         if (!queue.take().isRunning()) {

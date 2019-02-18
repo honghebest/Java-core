@@ -4,6 +4,7 @@ package com.hongghe.basicjava.thread;
  * @author hongghe 2018/11/25
  */
 public class FirstThreadTest extends Thread {
+
     int i = 0;
     //重写run方法，run方法的方法体就是现场执行体
     @Override

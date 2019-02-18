@@ -1,6 +1,5 @@
 package com.hongghe.basicjava.thread;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,12 +8,9 @@ import org.springframework.stereotype.Service;
  * @author hongghe 07/2018
  */
 @Service
-@Slf4j
 public class SingleThread {
 
-    public void singleThread() {
-
-    }
+    public void singleThread() {}
 
     public static void outputString() {
         new Thread(System.out.toString()).start();

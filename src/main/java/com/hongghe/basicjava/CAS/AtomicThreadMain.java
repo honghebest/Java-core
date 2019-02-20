@@ -1,5 +1,7 @@
 package com.hongghe.basicjava.CAS;
 
+import com.google.common.base.Strings;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -12,5 +14,7 @@ public class AtomicThreadMain {
     public static void main(String[] args) {
         AtomicInteger atomicInteger = new AtomicInteger();
         atomicInteger.incrementAndGet();
+        Integer number = null;
+        System.out.println(Strings.isNullOrEmpty(number.toString()));
     }
 }

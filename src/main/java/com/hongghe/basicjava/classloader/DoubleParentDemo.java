@@ -10,7 +10,6 @@ import java.util.StringTokenizer;
  */
 public class DoubleParentDemo {
 
-
     /**ExtClassLoader类中获取路径的代码*/
     private static File[] getExtDirection() {
         //加载<JAVA_HOME>/lib/ext目录中的类库

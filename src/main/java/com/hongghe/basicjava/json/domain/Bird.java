@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -18,7 +19,7 @@ public class Bird {
     /**
      * The name of bird.
      */
-    private String name;
+    private @NotNull String name;
 
     /**
      * The class of bird belong.

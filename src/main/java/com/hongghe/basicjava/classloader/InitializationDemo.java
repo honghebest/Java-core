@@ -10,6 +10,7 @@ class Grandpa {
 }
 
 class Father extends Grandpa {
+    
     static {
         System.out.println("爸爸在静态代码块");
     }

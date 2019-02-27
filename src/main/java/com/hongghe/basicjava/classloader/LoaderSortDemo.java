@@ -10,12 +10,43 @@ package com.hongghe.basicjava.classloader;
  */
 public class LoaderSortDemo {
 
+
+    public static final Integer num = 12;
+
+    private static final Integer nu = 1231;
+
+    public static Integer n = 15;
+
+    private static Integer nn = 16;
+
+    public Integer nnn = 17;
+
     static {
         System.out.println("父类的静态代码块");
     }
 
     {
         System.out.println("父类的普通代码块");
+    }
+
+    {
+        System.out.println("public " + nnn);
+    }
+
+    static {
+        System.out.println("public static final " + nu);
+    }
+
+    static {
+        System.out.println("public static " + n);
+    }
+
+    static {
+        System.out.println("private " + nn);
+    }
+
+    static {
+        System.out.println("public static final " + num);
     }
 
     public LoaderSortDemo(){

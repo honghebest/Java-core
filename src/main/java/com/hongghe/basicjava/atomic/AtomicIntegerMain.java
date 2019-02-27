@@ -12,7 +12,6 @@ public class AtomicIntegerMain {
         AtomicInteger atomicInteger = new AtomicInteger();
         atomicInteger.getAndIncrement();
         System.out.println(atomicInteger.toString());
-
         AtomicBoolean atomicBoolean = new AtomicBoolean();
         atomicBoolean.lazySet(true);
         atomicBoolean.compareAndSet(false, true);

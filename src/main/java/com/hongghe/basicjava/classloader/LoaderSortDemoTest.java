@@ -7,6 +7,8 @@ package com.hongghe.basicjava.classloader;
  */
 public class LoaderSortDemoTest extends LoaderSortDemo {
 
+    private static final Integer sonNum = 122;
+
     static {
         System.out.println("子类的静态代码块");
     }
@@ -15,7 +17,11 @@ public class LoaderSortDemoTest extends LoaderSortDemo {
         System.out.println("子类的代码块");
     }
 
-    public LoaderSortDemoTest(){
+    {
+        System.out.println("son block " + sonNum);
+    }
+
+    public LoaderSortDemoTest() {
         System.out.println("子类的构造器");
     }
 

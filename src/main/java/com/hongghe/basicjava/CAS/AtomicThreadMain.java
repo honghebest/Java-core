@@ -12,6 +12,7 @@ public class AtomicThreadMain {
     private static volatile int lock = 1;
 
     public static void main(String[] args) {
+        // The atomic integer 
         AtomicInteger atomicInteger = new AtomicInteger();
         atomicInteger.incrementAndGet();
         Integer number = null;

@@ -29,7 +29,9 @@ public class BlockQueueMain {
          */
         @Override
         public void run() {
-
+            for (int i = 0; i < 10; i++) {
+                blockingQueue.add(i);
+            }
         }
     }
 
@@ -48,7 +50,9 @@ public class BlockQueueMain {
          */
         @Override
         public void run() {
-
+            for (int i = 0; i < 10; i++) {
+                blockingQueue.add(i);
+            }
         }
     }
 }

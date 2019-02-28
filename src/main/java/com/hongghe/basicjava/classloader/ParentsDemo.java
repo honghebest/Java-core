@@ -13,6 +13,7 @@ public class ParentsDemo {
         while (clazz != null) {
             System.out.print(clazz.getClass().getName() + " -> ");
             clazz = clazz.getParent();
+            System.out.println(clazz.getClass());
         }
         System.out.println(clazz);
     }

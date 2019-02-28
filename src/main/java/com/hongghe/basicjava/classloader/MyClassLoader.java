@@ -21,8 +21,8 @@ public class MyClassLoader extends ClassLoader {
         File file = getClassFile(name);
         try {
             byte[] bytes = getClassBytes(file);
-            Class<?> c = this.defineClass(name, bytes, 0, bytes.length);
-            return c;
+            Class<?> clazz = this.defineClass(name, bytes, 0, bytes.length);
+            return clazz;
         } catch (Exception e) {
             e.printStackTrace();
         }

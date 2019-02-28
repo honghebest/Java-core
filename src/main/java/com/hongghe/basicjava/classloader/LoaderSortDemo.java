@@ -49,11 +49,11 @@ public class LoaderSortDemo {
         System.out.println("public static final " + num);
     }
 
-    public LoaderSortDemo(){
+    public LoaderSortDemo() {
         System.out.println("父类的构造器");
     }
 
     public static void main(String[] args) {
-        LoaderDemo loaderDemo = new LoaderDemo();
+        LoaderSortDemo loaderDemo = new LoaderSortDemo();
     }
 }

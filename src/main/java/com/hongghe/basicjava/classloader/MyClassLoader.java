@@ -12,8 +12,7 @@ public class MyClassLoader extends ClassLoader {
 
     public MyClassLoader() { }
 
-    public MyClassLoader(ClassLoader parent)
-    {
+    public MyClassLoader(ClassLoader parent) {
         super(parent);
     }
 

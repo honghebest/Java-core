@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="227e42b3-3893-4597-8f29-f409b6439b72" name="Default" comment="proxy setting.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/atomic/AtomicIntegerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/atomic/AtomicIntegerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/InitializationDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/InitializationDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/MyClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/MyClassLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/ParentsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/ParentsDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/TestMyClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/TestMyClassLoader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,14 +16,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="345">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding>
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
                 <element signature="e#383#384#0" expanded="true" />
                 <element signature="e#449#450#0" expanded="true" />
               </folding>
@@ -35,8 +33,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="682">
+              <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+              <folding>
+                <element signature="e#915#916#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/MyClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/ParentsDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/TestMyClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -72,9 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/proxy/Me.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/process/NotifyAndWait.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/process/mutilprocess/CASDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/atomic/AtomicLongMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/atomic/MutilThreadAtomic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/atomic/MutilThreadVoliatile.java" />
@@ -123,6 +153,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/atomic/AtomicIntegerMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/ParentsDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/TestMyClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/MyClassLoader.java" />
       </list>
     </option>
   </component>
@@ -242,7 +275,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/hongghe/work/BasicJava/src/main/java/com/hongghe/basicjava/compare/ObjectComparer.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551271828796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551272844684" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -258,7 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LoaderSortDemoTest">
+  <component name="RunManager" selected="Application.ParentsDemo">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -272,20 +305,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hongghe.basicjava.json.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AtomicThreadMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hongghe.basicjava.CAS.AtomicThreadMain" />
-      <module name="JavaCore" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hongghe.basicjava.CAS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,6 +342,20 @@
     </configuration>
     <configuration name="LoaderSortDemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hongghe.basicjava.classloader.LoaderSortDemoTest" />
+      <module name="JavaCore" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hongghe.basicjava.classloader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParentsDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hongghe.basicjava.classloader.ParentsDemo" />
       <module name="JavaCore" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -373,20 +406,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AtomicThreadMain" />
       <item itemvalue="Application.InitializationDemo" />
       <item itemvalue="Application.ArrayListParser" />
       <item itemvalue="Spring Boot.BasicJavaApplication" />
       <item itemvalue="Application.LoaderSortDemoTest" />
       <item itemvalue="Application.LoaderSortDemo" />
+      <item itemvalue="Application.ParentsDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ParentsDemo" />
         <item itemvalue="Application.LoaderSortDemoTest" />
         <item itemvalue="Application.LoaderSortDemo" />
         <item itemvalue="Application.InitializationDemo" />
         <item itemvalue="Application.ArrayListParser" />
-        <item itemvalue="Application.AtomicThreadMain" />
       </list>
     </recent_temporary>
   </component>
@@ -445,14 +478,7 @@
       <workItem from="1551062607874" duration="39000" />
       <workItem from="1551065009603" duration="180000" />
       <workItem from="1551183227506" duration="68000" />
-      <workItem from="1551266609638" duration="1490000" />
-    </task>
-    <task id="LOCAL-00017" summary="Java basic data class.">
-      <created>1547816082933</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1547816082933</updated>
+      <workItem from="1551266609638" duration="2074000" />
     </task>
     <task id="LOCAL-00018" summary="Java basic data class.">
       <created>1547816361252</created>
@@ -790,7 +816,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551269576544</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="proxy setting.">
+      <created>1551271874144</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1551271874144</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -805,13 +838,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93156000" />
+    <option name="totallyTimeSpent" value="93740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24866879" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24866879" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -824,14 +856,14 @@
       <window_info id="Web" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35044247" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35044247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32743362" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32743362" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.24336283" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -912,30 +944,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/lock/AccountingSync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/lock/consumerProductor/ReentrantLockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/lock/consumerProductor/WaitNotifyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1038">
-          <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/lock/PackageInfo.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1216,13 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/MyClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/json/domain/Bird.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1313,22 +1314,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="345">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/LoaderSortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="682">
+          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
           <folding>
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/PackageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/ParentsDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/TestMyClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/classloader/MyClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
           </folding>
         </state>
       </provider>

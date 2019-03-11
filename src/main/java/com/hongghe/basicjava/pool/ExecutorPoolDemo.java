@@ -10,11 +10,13 @@ import java.util.concurrent.TimeUnit;
 public class ExecutorPoolDemo {
 
     private static int produceTaskSleepTime = 2;
+
     private static int produceTaskMaxNumber = 10;
 
     public static void main(String[] args) {
         // 构造一个线程池
-        ThreadPoolExecutor threadPool = new ThreadPoolExecutor(2, 4, 3, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(3),
+        ThreadPoolExecutor threadPool = new ThreadPoolExecutor(2, 4, 3,
+                TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(3),
                 new ThreadPoolExecutor.DiscardOldestPolicy());
         for (int i = 1; i <= produceTaskMaxNumber; i++) {
             try {

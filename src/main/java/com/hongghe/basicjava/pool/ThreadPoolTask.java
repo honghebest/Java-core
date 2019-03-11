@@ -6,10 +6,14 @@ import java.io.Serializable;
  * @author: hongghe @date: 2019-03-11 15:48
  */
 public class ThreadPoolTask implements Runnable, Serializable {
-    private static final long serialVersionUID = 0;
-    private static int consumeTaskSleepTime = 2000;
+
+    private static final long serialVersionUID = -1L;
+
+    private static int consumeTaskSleepTime = 1000;
+
     // 保存任务所需要的数据
     private Object threadPoolTaskData;
+
     ThreadPoolTask(Object tasks) {
         this.threadPoolTaskData = tasks;
     }

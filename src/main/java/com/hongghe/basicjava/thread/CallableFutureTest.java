@@ -10,25 +10,6 @@ import java.util.concurrent.FutureTask;
  */
 public class CallableFutureTest implements Callable<Integer> {
 
-        public static void main(String[] args) {
-            CallableFutureTest callableFutureTest = new CallableFutureTest();
-            FutureTask<Integer> futureTask = new FutureTask<>(callableFutureTest);
-            for (int i=0; i<100; i++) {
-                System.out.println(Thread.currentThread().getName() + "的值" + i);
-                if (i == 20) {
-                    new Thread(futureTask, "The thread ").start();
-                }
-            }
-
-            try {
-                System.out.println("The sub thread " + futureTask.get());
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            }
-        }
-
         /**
          * Computes a result, or throws an exception if unable to do so.
          *
@@ -43,4 +24,23 @@ public class CallableFutureTest implements Callable<Integer> {
             }
             return i;
         }
+
+    public static void main(String[] args) {
+        CallableFutureTest callableFutureTest = new CallableFutureTest();
+        FutureTask<Integer> futureTask = new FutureTask<>(callableFutureTest);
+        for (int i=0; i<100; i++) {
+            System.out.println(Thread.currentThread().getName() + "的值" + i);
+            if (i == 20) {
+                new Thread(futureTask, "The thread ").start();
+            }
+        }
+
+        try {
+            System.out.println("The sub thread " + futureTask.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+    }
 }

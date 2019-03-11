@@ -5,10 +5,6 @@ package com.hongghe.basicjava.thread;
  */
 public class RunnableTest {
 
-    public static void main(String[] args) {
-
-    }
-
     public class MethodRunnable implements Runnable {
 
         /**
@@ -26,5 +22,9 @@ public class RunnableTest {
         public void run() {
 
         }
+    }
+
+    public static void main(String[] args) {
+        RunnableTest runnableTest = new RunnableTest();
     }
 }

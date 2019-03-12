@@ -7,5 +7,6 @@ public class SimpleArray {
 
     public static void main(String[] args) {
         Integer [] array = new Integer[] {1};
+        System.out.println(args.length);
     }
 }

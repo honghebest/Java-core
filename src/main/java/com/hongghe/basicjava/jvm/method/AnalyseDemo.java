@@ -1,8 +1,5 @@
 package com.hongghe.basicjava.jvm.method;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * 方法调用的使用
  *
@@ -10,13 +7,16 @@ import org.slf4j.LoggerFactory;
  */
 public class AnalyseDemo {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(AnalyseDemo.class);
+    static {
+        System.out.println("the static method.");
+    }
 
     public static void method() {
-        LOGGER.info("The analyse method");
+        System.out.println("the analyse method");
     }
 
     public static void main(String[] args) {
+        AnalyseDemo analyseDemo = new AnalyseDemo();
         method();
     }
 }

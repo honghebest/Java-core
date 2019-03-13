@@ -16,21 +16,21 @@ public class FutureTests {
 
         @Override
         public String call() throws Exception {
-            String tid = String.valueOf(Thread.currentThread().getId());
-            log.info("Thread id = {}", tid);
-            return tid;
+            String threadId = String.valueOf(Thread.currentThread().getId());
+            log.info("Thread id = {}", Thread.currentThread().getName());
+            return threadId;
         }
     }
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         List<Future<String>>  futures = new ArrayList<>();
         ExecutorService executorService = Executors.newCachedThreadPool();
-        for (int i=0; i<100; i++) {
+        for (int i=0; i<10; i++) {
             futures.add(executorService.submit(new Task()));
         }
 
         for (Future<String> stringFuture : futures) {
-            log.info("Thread tid = {}", stringFuture.get());
+            log.info("Thread threadId = {}", stringFuture.get());
         }
     }
 }

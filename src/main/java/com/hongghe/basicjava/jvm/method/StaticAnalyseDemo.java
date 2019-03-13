@@ -1,16 +1,11 @@
 package com.hongghe.basicjava.jvm.method;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * 静态指派
  *
  * @author hongghe 01/08/2018
  */
 public class StaticAnalyseDemo {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(StaticAnalyseDemo.class);
 
     static class Parent {}
 
@@ -19,15 +14,15 @@ public class StaticAnalyseDemo {
     static class ChildTwo extends Parent {}
 
     public void sayHello(ChildOne childOne) {
-        LOGGER.info("child one is call");
+        System.out.println("child one is call");
     }
 
     public void sayHello(ChildTwo childTwo) {
-        LOGGER.info("The child two is call");
+        System.out.println("the child two is call.");
     }
 
     public void sayHello(Parent parent) {
-        LOGGER.info("The parent is call.");
+        System.out.println("the parent is call.");
     }
 
     public static void main(String[] args) {

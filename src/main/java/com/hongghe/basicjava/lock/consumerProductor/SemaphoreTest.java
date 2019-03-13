@@ -8,22 +8,13 @@ import java.util.concurrent.Semaphore;
 public class SemaphoreTest {
 
     private static Integer count = 0;
-    //创建三个信号量
-    final Semaphore notFull = new Semaphore(10);
-    final Semaphore notEmpty = new Semaphore(0);
-    final Semaphore mutex = new Semaphore(1);
 
-    public static void main(String[] args) {
-        SemaphoreTest semaphoreTest = new SemaphoreTest();
-        new Thread(semaphoreTest.new Producer()).start();
-        new Thread(semaphoreTest.new Consumer()).start();
-        new Thread(semaphoreTest.new Producer()).start();
-        new Thread(semaphoreTest.new Consumer()).start();
-        new Thread(semaphoreTest.new Producer()).start();
-        new Thread(semaphoreTest.new Consumer()).start();
-        new Thread(semaphoreTest.new Producer()).start();
-        new Thread(semaphoreTest.new Consumer()).start();
-    }
+    // 创建三个信号量
+    private final Semaphore notFull = new Semaphore(10);
+
+    private final Semaphore notEmpty = new Semaphore(0);
+
+    private final Semaphore mutex = new Semaphore(1);
 
     class Producer implements Runnable {
         @Override
@@ -34,6 +25,7 @@ public class SemaphoreTest {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+
                 try {
                     notFull.acquire();
                     mutex.acquire();
@@ -58,6 +50,7 @@ public class SemaphoreTest {
                 } catch (InterruptedException e1) {
                     e1.printStackTrace();
                 }
+
                 try {
                     notEmpty.acquire();
                     mutex.acquire();
@@ -71,5 +64,17 @@ public class SemaphoreTest {
                 }
             }
         }
+    }
+
+    public static void main(String[] args) {
+        SemaphoreTest semaphoreTest = new SemaphoreTest();
+        new Thread(semaphoreTest.new Producer()).start();
+        new Thread(semaphoreTest.new Consumer()).start();
+        new Thread(semaphoreTest.new Producer()).start();
+        new Thread(semaphoreTest.new Consumer()).start();
+        new Thread(semaphoreTest.new Producer()).start();
+        new Thread(semaphoreTest.new Consumer()).start();
+        new Thread(semaphoreTest.new Producer()).start();
+        new Thread(semaphoreTest.new Consumer()).start();
     }
 }

@@ -1,30 +1,24 @@
 package com.hongghe.basicjava.lock.consumerProductor;
 
-import com.hongghe.basicjava.lock.dead.ReentrantLock;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author: hongghe @date: 2019-02-14 10:43
  */
 public class ReentrantLockTest {
 
-    private static Integer count = 0;
-    private static final Integer FULL = 10;
-    private Lock lock = (Lock) new ReentrantLock();
+    private ReentrantLock reentrantLock = new ReentrantLock();
 
-    private final Condition notFull = lock.newCondition();
-    private final Condition notEmpty = lock.newCondition();
+    private Condition condition = reentrantLock.newCondition();
 
-    public static void main(String[] args) {
-        ReentrantLockTest reentrantLockTest = new ReentrantLockTest();
-        new Thread(reentrantLockTest.new Producer());
-        new Thread(reentrantLockTest.new Consumer());
-    }
+    private List<Integer> list = new ArrayList<>();
+
+    private volatile boolean FLAG = true;
 
     class Producer implements Runnable {
-
         /**
          * When an object implementing interface <code>Runnable</code> is used
          * to create a thread, starting the thread causes the object's
@@ -38,7 +32,11 @@ public class ReentrantLockTest {
          */
         @Override
         public void run() {
+            try {
 
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -57,7 +55,17 @@ public class ReentrantLockTest {
          */
         @Override
         public void run() {
+            try {
 
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
+    }
+
+    public static void main(String[] args) {
+        ReentrantLockTest reentrantLockTest = new ReentrantLockTest();
+        new Thread(reentrantLockTest.new Producer());
+        new Thread(reentrantLockTest.new Consumer());
     }
 }

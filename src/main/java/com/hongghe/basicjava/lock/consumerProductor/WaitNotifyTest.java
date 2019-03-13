@@ -9,12 +9,6 @@ public class WaitNotifyTest {
     private static final Integer FULL = 10;
     private static final String LOCK = "lock";
 
-    public static void main(String[] args) {
-        WaitNotifyTest waitNotifyTest = new WaitNotifyTest();
-        new Thread(waitNotifyTest.new Producer());
-        new Thread(waitNotifyTest.new Consumer());
-    }
-
     class Producer implements Runnable {
 
         /**
@@ -89,5 +83,11 @@ public class WaitNotifyTest {
                 }
             }
         }
+    }
+
+    public static void main(String[] args) {
+        WaitNotifyTest waitNotifyTest = new WaitNotifyTest();
+        new Thread(waitNotifyTest.new Producer());
+        new Thread(waitNotifyTest.new Consumer());
     }
 }

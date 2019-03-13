@@ -20,13 +20,14 @@ import java.util.concurrent.Future;
 public class FutureDemo {
 
     private ExecutorService threadExecutorService = Executors.newCachedThreadPool();
+
     public void addDouble() {
         threadExecutorService.submit(new Runnable() {
             @Override
             public void run() {
                 // TODO
             }
-        });
+        }, "add double");
     }
 
     public static void main(String[] args) {

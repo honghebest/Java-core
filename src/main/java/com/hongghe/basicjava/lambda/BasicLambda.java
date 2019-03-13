@@ -20,7 +20,6 @@ public class BasicLambda {
         System.out.println(integerList.stream().filter(aa -> aa > 1).mapToLong(bb -> bb).sum());
         integerList.forEach(z -> System.out.println(z));
 
-
         System.out.println(integerList.stream().allMatch(xxx -> xxx > 0));
         System.out.println(integerList.stream().anyMatch(xxx -> xxx > 0));
         System.out.println(integerList.stream().findAny().filter(xxxx -> xxxx < 0));

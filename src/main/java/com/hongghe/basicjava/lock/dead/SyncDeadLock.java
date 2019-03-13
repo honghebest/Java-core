@@ -5,8 +5,13 @@ package com.hongghe.basicjava.lock.dead;
  */
 public class SyncDeadLock {
 
-    private static Object locka = new Object();
-    private static Object lockb = new Object();
+    private static Object lockA = new Object();
+
+    private static Object lockB = new Object();
+
+    private static Object lockC = new Object();
+
+    private static Object lockD = new Object();
 
     public static void main(String[] args){
         new SyncDeadLock().deadLock();
@@ -16,7 +21,7 @@ public class SyncDeadLock {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                synchronized (locka){
+                synchronized (lockA){
                     try{
                         System.out.println(Thread.currentThread().getName()+" get lock A is running!");
                         Thread.sleep(500);
@@ -25,7 +30,7 @@ public class SyncDeadLock {
                         e.printStackTrace();
                     }
                     System.out.println(Thread.currentThread().getName()+" need lock B!Just waiting!");
-                    synchronized (lockb){
+                    synchronized (lockB){
                         System.out.println(Thread.currentThread().getName()+" get lock B running!");
                     }
                 }
@@ -35,7 +40,7 @@ public class SyncDeadLock {
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                synchronized (lockb){
+                synchronized (lockB){
                     try{
                         System.out.println(Thread.currentThread().getName()+" get lock B running!");
                         Thread.sleep(500);
@@ -44,14 +49,33 @@ public class SyncDeadLock {
                         e.printStackTrace();
                     }
                     System.out.println(Thread.currentThread().getName()+" need lock A! Just waiting!");
-                    synchronized (locka){
+                    synchronized (lockA){
                         System.out.println(Thread.currentThread().getName()+" get lock A is running!");
                     }
                 }
             }
         },"thread2");
 
+
+        Thread thread3 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                synchronized (lockC) {
+                    try {
+                        System.out.println("lock c");
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    synchronized (lockD) {
+                        System.out.println("lock d");
+                    }
+                }
+            }
+        }, "thread3");
+
         thread1.start();
         thread2.start();
+        thread3.start();
     }
 }

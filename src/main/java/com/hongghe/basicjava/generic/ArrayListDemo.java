@@ -8,10 +8,18 @@ import java.util.Collection;
 public class ArrayListDemo<K, E> {
 
     public String get(Collection<? extends E> param) {
+        System.out.println(param);
         return null;
     }
 
     public <K> String returnName(K k) {
-        return null;
+        System.out.println(k);
+        return "name";
+    }
+
+    public static void main(String[] args) {
+        ArrayListDemo<String,String> arrayListDemo = new ArrayListDemo<>();
+        String name = arrayListDemo.returnName("ma,e");
+        System.out.println(name);
     }
 }

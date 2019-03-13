@@ -57,7 +57,7 @@ public class ThreadLocalTest implements Runnable {
         return person;
     }
 
-    public static void main(String[] agrs) {
+    public static void main(String[] args) {
         ThreadLocalTest td = new ThreadLocalTest();
         Thread t1 = new Thread(td);
         Thread t2 = new Thread(td);

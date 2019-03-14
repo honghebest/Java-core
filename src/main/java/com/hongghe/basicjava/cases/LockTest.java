@@ -6,6 +6,7 @@ import java.util.Date;
  * @author: hongghe @date: 2019-03-07 10:16
  */
 public class LockTest {
+
     public static String obj1 = "obj1";
     public static String obj2 = "obj2";
     public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class LockTest {
         new Thread(lb).start();
     }
 }
+
 class LockA implements Runnable{
     public void run() {
         try {
@@ -34,6 +36,7 @@ class LockA implements Runnable{
         }
     }
 }
+
 class LockB implements Runnable{
     public void run() {
         try {

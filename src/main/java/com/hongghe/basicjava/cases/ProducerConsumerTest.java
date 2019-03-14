@@ -12,6 +12,7 @@ public class ProducerConsumerTest {
         c1.start();
     }
 }
+
 class CubbyHole {
     private int contents;
     private boolean available = false;

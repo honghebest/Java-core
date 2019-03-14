@@ -4,7 +4,8 @@ package com.hongghe.basicjava.cases;
  * @author: hongghe @date: 2019-03-07 10:24
  */
 class RunnableDemo implements Runnable {
-    private Thread t;
+
+    private Thread thread;
     private String threadName;
 
     RunnableDemo( String name) {
@@ -28,9 +29,9 @@ class RunnableDemo implements Runnable {
 
     public void start () {
         System.out.println("Starting " +  threadName );
-        if (t == null) {
-            t = new Thread (this, threadName);
-            t.start ();
+        if (thread == null) {
+            thread = new Thread (this, threadName);
+            thread.start ();
         }
     }
 }

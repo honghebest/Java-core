@@ -29,7 +29,8 @@ public class ThreadLocalMain {
         Thread thread1 = new Thread(() -> {
             test.set();
             System.out.println(test.getLong());
-            System.out.println(test.getString()); });
+            System.out.println(test.getString());
+        });
         thread1.start();
         thread1.join();
         System.out.println(test.getLong());

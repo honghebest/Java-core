@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227e42b3-3893-4597-8f29-f409b6439b72" name="Default" comment="修改代码的格式。">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/TestThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/TestThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/TestThread.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="303">
+              <caret line="23" column="88" lean-forward="true" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,6 +179,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,15 +263,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/hongghe/work/BasicJava/src/main/java/com/hongghe/basicjava/compare/ObjectComparer.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552616191768" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552634003487" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -403,10 +402,10 @@
     <list>
       <item itemvalue="Application.ThreadLocalTest" />
       <item itemvalue="Application.ThreadLocalMain" />
-      <item itemvalue="Spring Boot.BasicJavaApplication" />
       <item itemvalue="Application.SemaphoreTest2" />
       <item itemvalue="Application.TestThread" />
       <item itemvalue="Application.Test" />
+      <item itemvalue="Spring Boot.BasicJavaApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -490,14 +489,8 @@
       <workItem from="1552479274736" duration="259000" />
       <workItem from="1552494995669" duration="864000" />
       <workItem from="1552497070686" duration="443000" />
-      <workItem from="1552527316359" duration="5344000" />
-    </task>
-    <task id="LOCAL-00035" summary="Java inherit.">
-      <created>1548642303873</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1548642303873</updated>
+      <workItem from="1552527316359" duration="5549000" />
+      <workItem from="1552629291474" duration="1182000" />
     </task>
     <task id="LOCAL-00036" summary="Java inherit.">
       <created>1548643223254</created>
@@ -835,7 +828,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552535841230</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="修改代码的格式。">
+      <created>1552616488569</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1552616488569</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -850,7 +850,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130249000" />
+    <option name="totallyTimeSpent" value="131636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-139" y="-1200" width="1920" height="1200" extended-state="6" />
@@ -869,7 +869,7 @@
       <window_info id="Web" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31238937" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42477876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1310,6 +1310,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/TestThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/InstantMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1324,17 +1331,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/TestThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hongghe/basicjava/cases/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="303">
+          <caret line="23" column="88" lean-forward="true" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

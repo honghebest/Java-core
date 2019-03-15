@@ -12,7 +12,6 @@ public class TestThread {
         RunnableDemo R2 = new RunnableDemo( "Thread-2");
         R2.start();
 
-
         ThreadDemo T1 = new ThreadDemo( "Thread-1");
         T1.start();
 

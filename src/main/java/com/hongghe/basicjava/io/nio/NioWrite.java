@@ -15,7 +15,7 @@ public class NioWrite {
     private static final byte[] MESSAGE = { 83, 111, 109, 101, 32, 98, 121, 116, 101, 115, 46 };
 
     public static void main(String[] args) throws IOException {
-        FileOutputStream fileOutputStream = new FileOutputStream("\\test.txg");
+        FileOutputStream fileOutputStream = new FileOutputStream("/Users/hongghe/work/JavaCore/src/main/java/com/hongghe/basicjava/io/nio/test.txt");
         FileChannel fileChannel = fileOutputStream.getChannel();
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
 

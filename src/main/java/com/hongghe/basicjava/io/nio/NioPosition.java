@@ -17,14 +17,11 @@ public class NioPosition {
         FileChannel fileChannel = fileInputStream.getChannel();
         ByteBuffer byteBuffer = ByteBuffer.allocate(10);
         fileChannel.read(byteBuffer);
-
         byteBuffer.flip();
-
         while (byteBuffer.remaining() > 0) {
             byte b = byteBuffer.get();
             System.out.println((char)b);
         }
-
         byteBuffer.clear();
         fileInputStream.close();
     }

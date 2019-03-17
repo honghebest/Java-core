@@ -25,7 +25,7 @@ public class NioBuffer {
         while (buffer.hasRemaining()) {
             // 读取此缓冲区当前位置的整数，然后当前位置递增
             int j =  buffer.get();
-            System.out.println("The j=" + j);
+            System.out.println("the j=" + j);
         }
     }
 }

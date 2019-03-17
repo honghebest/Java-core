@@ -28,7 +28,6 @@ public class NioRead {
             if (eof == -1) {
                 break;
             }
-
             // 重新设置buffer的position=0,limit=position
             byteBuffer.flip();
             outChannel.write(byteBuffer);

@@ -19,7 +19,7 @@ public class NioReadWriteChannel {
 
     public static void main(String[] args) throws IOException {
         byteChannelRead();
-        String string = "The demo string";
+        String string = "the demo string";
         byte[] byteArray = string.getBytes();
         ByteBuffer byteBuffer = ByteBuffer.wrap(byteArray);
         byteChannelWrite(byteBuffer);
@@ -28,7 +28,7 @@ public class NioReadWriteChannel {
     }
 
     public static void byteChannelRead() throws IOException {
-        Path filePath = FileSystems.getDefault().getPath(".", "test.txt");
+        Path filePath = FileSystems.getDefault().getPath(".", "/Users/hongghe/work/JavaCore/src/main/java/com/hongghe/basicjava/io/nio/test.txt");
         SeekableByteChannel byteChannel = Files.newByteChannel(filePath);
         ByteBuffer byteBuffer = ByteBuffer.allocate(10);
         Charset charset = Charset.forName("US-ASCII");

@@ -5,11 +5,11 @@ import java.io.PrintWriter;
 import java.security.PrivilegedActionException;
 
 /**
- * @author: hongghe @date: 2019-03-13 11:40
+ * @author: hongghe @date: 2019-03-20 15:48
  */
-public class UserException extends Throwable {
+public class SelfThrowException extends Throwable {
 
-    private static final long serialVersionUID = -6874345426344922891L;
+    private static final long serialVersionUID = -8734359433519732729L;
 
     /**
      * Constructs a new throwable with {@code null} as its detail message.
@@ -19,7 +19,7 @@ public class UserException extends Throwable {
      * <p>The {@link #fillInStackTrace()} method is called to initialize
      * the stack trace data in the newly created throwable.
      */
-    public UserException() {
+    public SelfThrowException() {
         super();
     }
 
@@ -34,7 +34,7 @@ public class UserException extends Throwable {
      * @param message the detail message. The detail message is saved for
      *                later retrieval by the {@link #getMessage()} method.
      */
-    public UserException(String message) {
+    public SelfThrowException(String message) {
         super(message);
     }
 
@@ -55,7 +55,7 @@ public class UserException extends Throwable {
      *                unknown.)
      * @since 1.4
      */
-    public UserException(String message, Throwable cause) {
+    public SelfThrowException(String message, Throwable cause) {
         super(message, cause);
     }
 
@@ -76,7 +76,7 @@ public class UserException extends Throwable {
      *              unknown.)
      * @since 1.4
      */
-    public UserException(Throwable cause) {
+    public SelfThrowException(Throwable cause) {
         super(cause);
     }
 
@@ -120,7 +120,7 @@ public class UserException extends Throwable {
      * @see ArithmeticException
      * @since 1.7
      */
-    protected UserException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    protected SelfThrowException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 

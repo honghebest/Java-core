@@ -4,6 +4,7 @@ package com.hongghe.basicjava.exception;
  * @author: hongghe @date: 2019-03-13 11:34
  */
 public class TestException {
+
     public TestException() {
     }
 

@@ -5,14 +5,17 @@ import java.lang.reflect.Method;
 
 public class ReflectClass {
 
-    private static Object TestUser;
-
     public static void main(String[] args) throws Exception {
         Class clazz = Class.forName(UserInformation.class.getName());
-        Method method = clazz.getMethod("add", clazz);
-        Annotation annotation = method.getAnnotation(clazz);
-        if (annotation.equals(TestUser)) {
-            System.out.println("test");
+        System.out.println(clazz);
+        Method method = clazz.getMethod("add", null);
+        System.out.println(method);
+        Annotation annotation = method.getAnnotation(TestUser.class);
+        System.out.println(annotation);
+        if (annotation != null) {
+            System.out.println(annotation);
+            return;
         }
+        System.out.println("test");
     }
 }

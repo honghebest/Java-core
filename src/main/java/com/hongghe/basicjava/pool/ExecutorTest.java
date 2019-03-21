@@ -17,28 +17,28 @@ public class ExecutorTest {
                 new ThreadPoolExecutor.CallerRunsPolicy());
     }
 
-    class RunName implements Callable {
+    class RunName implements Runnable {
 
         /**
-         * Computes a result, or throws an exception if unable to do so.
+         * When an object implementing interface <code>Runnable</code> is used
+         * to create a thread, starting the thread causes the object's
+         * <code>run</code> method to be called in that separately executing
+         * thread.
+         * <p>
+         * The general contract of the method <code>run</code> is that it may
+         * take any action whatsoever.
          *
-         * @return computed result
-         * @throws Exception if unable to compute a result
+         * @see Thread#run()
          */
         @Override
-        public Object call() throws Exception {
-            try {
-                Thread.sleep(20000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            return null;
+        public void run() {
+            System.out.println("name");
         }
     }
 
 
     public void runThread(){
-        executorService.execute(() -> runThread());
+        executorService.execute(new RunName());
     }
 
     public void name() {

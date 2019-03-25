@@ -152,11 +152,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-139" />
-    <option name="y" value="-1200" />
-    <option name="width" value="1920" />
-    <option name="height" value="1200" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -344,6 +342,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -364,9 +363,9 @@
       <item itemvalue="Application.ReflectClass" />
       <item itemvalue="Application.ExecutorTest" />
       <item itemvalue="Application.ThreadTest" />
-      <item itemvalue="Spring Boot.BasicJavaApplication" />
       <item itemvalue="Application.InformationHandler" />
       <item itemvalue="Application.ThreadPoolExecutorTest" />
+      <item itemvalue="Spring Boot.BasicJavaApplication" />
     </list>
     <recent_temporary>
       <list>

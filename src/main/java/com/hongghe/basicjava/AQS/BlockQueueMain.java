@@ -10,7 +10,6 @@ public class BlockQueueMain {
 
     private BlockingQueue blockingQueue = new ArrayBlockingQueue(10);
 
-
     public static void main(String[] args) {
 
     }

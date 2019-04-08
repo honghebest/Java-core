@@ -6,9 +6,8 @@ package com.hongghe.basicjava;
 public class TestInteger {
 
 
-    public static int change(Integer i) {
+    public static void change(Integer i) {
         i = 2;
-        return i;
     }
 
     public static void main(String[] args) {

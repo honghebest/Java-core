@@ -6,14 +6,20 @@ package com.hongghe.basicjava;
 public class TestInteger {
 
 
-    public static void change(Integer i) {
-        i = 2;
+    private static int i;
+
+    public void change(int i) {
+        i = 12;
     }
 
     public static void main(String[] args) {
-        Integer i = 1;
-        System.out.println(i.hashCode());
-        change(i);
-        System.out.println(i.hashCode());
+        TestInteger testInteger = new TestInteger();
+        i = 1;
+        System.out.println(i);
+        testInteger.change(i);
+        System.out.println(i);
+        Integer a = 122222;
+        Integer b = 122222;
+        System.out.println(a == b);
     }
 }

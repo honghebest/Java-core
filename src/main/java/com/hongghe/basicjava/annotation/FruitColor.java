@@ -6,7 +6,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface FruitColor {
-    
+
     /**
      * 颜色枚举
      * @author peida

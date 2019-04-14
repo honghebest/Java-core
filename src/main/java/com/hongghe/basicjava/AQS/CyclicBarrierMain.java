@@ -1,6 +1,5 @@
 package com.hongghe.basicjava.AQS;
 
-import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 /**
@@ -10,32 +9,7 @@ import java.util.concurrent.CyclicBarrier;
 public class CyclicBarrierMain {
 
     public static void main(String[] args) {
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(1);
-        MethodDemo methodDemo = new MethodDemo(cyclicBarrier, "name");
-        methodDemo.run();
-    }
-
-    public static class MethodDemo implements Runnable {
-
-        private CyclicBarrier cyclicBarrier;
-
-        private String name;
-
-        public MethodDemo(CyclicBarrier cyclicBarrier, String name) {
-            this.cyclicBarrier = cyclicBarrier;
-            this.name = name;
-        }
-
-        @Override
-        public void run() {
-            System.out.println("The run method name " +  name);
-            try {
-                cyclicBarrier.await();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (BrokenBarrierException e) {
-                e.printStackTrace();
-            }
-        }
+        PersonInfoService personInfoService = new PersonInfoImp();
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(2, new MethodDemo(personInfoService));
     }
 }

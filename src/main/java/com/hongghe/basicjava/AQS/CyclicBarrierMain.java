@@ -9,6 +9,7 @@ import java.util.concurrent.CyclicBarrier;
 public class CyclicBarrierMain {
 
     public static void main(String[] args) {
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(10);
+        PersonInfoService personInfoService = new PersonInfoImp();
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(2, new MethodDemo(personInfoService));
     }
 }

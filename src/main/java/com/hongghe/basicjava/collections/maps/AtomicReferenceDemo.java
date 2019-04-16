@@ -28,8 +28,7 @@ public class AtomicReferenceDemo {
     }
 
     public static void immutableReference() {
-        AtomicReference<ImmutableMap<String, String>> atomicReference =
-                new AtomicReference<>();
+        AtomicReference<ImmutableMap<String, String>> atomicReference = new AtomicReference<>();
         Map<String, String> map = new HashMap<>();
         map.put("key0", "value0");
         map.put("key1", "value1");
@@ -38,8 +37,7 @@ public class AtomicReferenceDemo {
     }
 
     public static void builderImmutable() {
-        final ImmutableMap<String, String> immutableMap ;
-        immutableMap = new ImmutableMap.Builder<String, String>()
+        final ImmutableMap<String, String> immutableMap = new ImmutableMap.Builder<String, String>()
                 .put("key0", "value0")
                 .put("key1", "value1")
                 .put("key2", "value2")

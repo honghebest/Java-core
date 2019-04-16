@@ -1,7 +1,8 @@
 package com.hongghe.basicjava.collections.lists;
 
 /**
- * @author: hongghe @date: 2019-04-15 21:58
+ * @author: hongghe
+ * @date: 2019-04-15 21:58
  */
 
 

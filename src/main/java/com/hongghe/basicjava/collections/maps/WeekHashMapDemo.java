@@ -10,5 +10,6 @@ public class WeekHashMapDemo {
 
     public static void main(String[] args) {
         Map<String, Integer> weakHashMap = new WeakHashMap();
+        weakHashMap.put("name", "name".getBytes().length);
     }
 }

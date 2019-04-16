@@ -8,8 +8,37 @@ import java.util.concurrent.CyclicBarrier;
  */
 public class CyclicBarrierMain {
 
+    private Bill bill;
+
     public static void main(String[] args) {
         PersonInfoService personInfoService = new PersonInfoImp();
         CyclicBarrier cyclicBarrier = new CyclicBarrier(2, new MethodDemo(personInfoService));
+    }
+
+    class CheckBill implements Runnable {
+
+        private Bill bill;
+
+        CheckBill(Bill bill) {
+            this.bill = bill;
+        }
+
+        /**
+         * When an object implementing interface <code>Runnable</code> is used
+         * to create a thread, starting the thread causes the object's
+         * <code>run</code> method to be called in that separately executing
+         * thread.
+         * <p>
+         * The general contract of the method <code>run</code> is that it may
+         * take any action whatsoever.
+         *
+         * @see Thread#run()
+         */
+        @Override
+        public void run() {
+            if (bill.getBillId() != null) {
+                System.out.println(bill.getAmount());
+            }
+        }
     }
 }

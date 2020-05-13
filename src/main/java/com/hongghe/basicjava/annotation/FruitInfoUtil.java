@@ -12,7 +12,7 @@ import java.lang.reflect.Field;
 @Slf4j
 public class FruitInfoUtil {
 
-    
+
     public static void getFruitInfo(Class<?> clazz) {
         String fruitNameString = "The fruit name is : ";
         String fruitColorString = "The fruit color is : ";

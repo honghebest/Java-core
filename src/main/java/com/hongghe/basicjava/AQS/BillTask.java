@@ -3,11 +3,21 @@ package com.hongghe.basicjava.AQS;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
-class BillTask extends Thread {
-    // 计费服务
+/**
+ * @author honghe zhang
+ */
+public class BillTask extends Thread {
+
+    /**
+     * 计费服务
+     */
     private BillService billService;
+
     private CyclicBarrier barrier;
-    // 代码，按省代码分类，各省数据库独立。
+
+    /**
+     * 代码，按省代码分类，各省数据库独立
+     */
     private String code;
 
     BillTask(BillService billService, CyclicBarrier barrier, String code) {
@@ -16,6 +26,7 @@ class BillTask extends Thread {
         this.code = code;
     }
 
+    @Override
     public void run() {
         System.out.println("开始计算--" + code + "省--数据！");
         billService.bill(code);

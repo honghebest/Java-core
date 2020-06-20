@@ -4,7 +4,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author: hongghe @date: 2019-02-11 15:48
+ * @author: hongghe
+ * @date: 2019-02-11 15:48
  */
 public class AtomicIntegerMain {
 

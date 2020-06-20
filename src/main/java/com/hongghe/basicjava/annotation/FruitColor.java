@@ -15,7 +15,7 @@ public @interface FruitColor {
      * @author peida
      *
      */
-    public enum Color{ BULE,RED,GREEN};
+    public enum Color{ BLUE,RED,GREEN};
 
     /**
      * 颜色属性

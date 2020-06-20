@@ -15,7 +15,7 @@ public class AtomicThreadMain {
         // The atomic integer
         AtomicInteger atomicInteger = new AtomicInteger();
         atomicInteger.incrementAndGet();
-        Integer number = null;
+        Integer number = 1;
         System.out.println(Strings.isNullOrEmpty(number.toString()));
     }
 }

@@ -12,6 +12,7 @@ public class TestInteger {
         System.out.println(i);
     }
 
+
     public static void main(String[] args) {
         Integer num = 12123123;
         System.out.println(num.hashCode());
